@@ -20,9 +20,7 @@ export const contact = {
   social: {
     linkedin: "https://linkedin.com",
     facebook: "https://facebook.com",
-    instagram: "https://instagram.com",
     twitter: "https://twitter.com",
-    youtube: "https://youtube.com",
   },
 } as const;
 

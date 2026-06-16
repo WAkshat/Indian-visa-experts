@@ -39,9 +39,7 @@ export function organizationSchema() {
     sameAs: [
       contact.social.linkedin,
       contact.social.facebook,
-      contact.social.instagram,
       contact.social.twitter,
-      contact.social.youtube,
     ],
     serviceType: [
       "Business Visa Consulting",

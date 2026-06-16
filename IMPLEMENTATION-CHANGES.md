@@ -69,7 +69,7 @@ Verified in the production build: the new phone/email/WhatsApp/address appear ac
 |---|---|---|
 | **Automated lead capture / real email delivery** | Requires an email provider + secret API key, which can't be set from the codebase alone. `mailto:` is the working no-secret bridge. | Swap the `mailto:` for a POST to **Web3Forms / Formspree / Resend**, or a Cloudflare email worker. |
 | **Newsletter subscriber storage** | No mailing-list provider connected. | **Mailchimp / ConvertKit / Brevo** API + key. |
-| **Real social media profile URLs** | The actual profile links weren't provided; inventing URLs would create 404s. Centralized in `data/contact.ts` (`social`) so they're a one-line update each. | The real LinkedIn / Facebook / Instagram / X / YouTube URLs. |
+| **Real social media profile URLs** | The actual profile links weren't provided; inventing URLs would create 404s. Centralized in `data/contact.ts` (`social`) so they're a one-line update each. | The real LinkedIn / Facebook / X URLs. (Instagram & YouTube removed per request.) |
 | **Downloadable checklist PDF** | No PDF asset exists in the project. The lead form now requests it by email instead. | A real PDF in `public/` + link it from the success flow. |
 | **YouTube consultation video** | Intentionally optional — the homepage section falls back to a static image. | Set `media.youtube.consultationVideoId` in `data/media.ts`. |
 | **Postal code in address schema** | Not provided. | The 6-digit PIN code for the Gurgaon office. |
