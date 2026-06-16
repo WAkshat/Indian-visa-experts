@@ -10,7 +10,9 @@ export default function JsonLd({ data }: { data: object | object[] }) {
         <script
           key={i}
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(block) }}
+          // Escape "<" so schema data can never break out of the <script> tag
+          // (e.g. a stray "</script>"). Produces valid JSON either way.
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(block).replace(/</g, "\\u003c") }}
         />
       ))}
     </>
