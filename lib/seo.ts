@@ -4,6 +4,7 @@
  */
 import type { BlogPost } from "@/data/blog-posts";
 import type { ServiceDetail } from "@/data/services";
+import { contact } from "@/data/contact";
 
 export const BASE_URL = "https://indiavisaexperts.com";
 export const ORG_NAME = "India Visa Experts";
@@ -24,19 +25,23 @@ export function organizationSchema() {
     url: BASE_URL,
     logo: LOGO_URL,
     image: LOGO_URL,
-    telephone: "+91-123-456-7890",
-    email: "info@indiavisaexperts.com",
+    telephone: contact.phoneTel,
+    email: contact.email,
     priceRange: "$$",
     address: {
       "@type": "PostalAddress",
-      addressLocality: "New Delhi",
-      addressCountry: "IN",
+      streetAddress: contact.address.street,
+      addressLocality: contact.address.locality,
+      addressRegion: contact.address.region,
+      addressCountry: contact.address.country,
     },
     areaServed: { "@type": "Country", name: "India" },
     sameAs: [
-      "https://linkedin.com/company/india-visa-experts",
-      "https://facebook.com/indiavisaexperts",
-      "https://twitter.com/indiavisaexperts",
+      contact.social.linkedin,
+      contact.social.facebook,
+      contact.social.instagram,
+      contact.social.twitter,
+      contact.social.youtube,
     ],
     serviceType: [
       "Business Visa Consulting",

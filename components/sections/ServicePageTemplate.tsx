@@ -5,6 +5,7 @@ import CTASection from "./CTASection";
 import ContactForm from "../forms/ContactForm";
 import JsonLd from "../seo/JsonLd";
 import { breadcrumbSchema, serviceSchema, faqSchema } from "@/lib/seo";
+import { whatsappLink } from "@/data/contact";
 
 interface ServicePageTemplateProps {
   service: ServiceDetail;
@@ -61,7 +62,7 @@ export default function ServicePageTemplate({ service }: ServicePageTemplateProp
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <a
-                  href="https://wa.me/919876543210"
+                  href={whatsappLink()}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-7 py-3.5 border-2 border-white/30 text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-200"
@@ -121,7 +122,7 @@ export default function ServicePageTemplate({ service }: ServicePageTemplateProp
                   Book Free Consultation
                 </Link>
                 <a
-                  href="https://wa.me/919876543210"
+                  href={whatsappLink()}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full text-center px-5 py-3 bg-green-500 text-white font-semibold rounded-xl hover:bg-green-600 transition-colors"

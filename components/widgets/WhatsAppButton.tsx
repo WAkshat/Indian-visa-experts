@@ -1,13 +1,10 @@
 "use client";
 
 import { MessageCircle } from "lucide-react";
+import { whatsappLink } from "@/data/contact";
 
 export default function WhatsAppButton() {
-  const phoneNumber = "919876543210";
-  const message = encodeURIComponent(
-    "Hello! I would like to inquire about India visa and immigration consulting services."
-  );
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+  const whatsappUrl = whatsappLink();
 
   return (
     <a

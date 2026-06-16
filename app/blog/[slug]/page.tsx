@@ -8,6 +8,7 @@ import ContactForm from "@/components/forms/ContactForm";
 import CTASection from "@/components/sections/CTASection";
 import JsonLd from "@/components/seo/JsonLd";
 import { articleSchema, breadcrumbSchema } from "@/lib/seo";
+import { whatsappLink } from "@/data/contact";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -123,24 +124,34 @@ export default async function BlogPostPage({ params }: Props) {
         elements.push(
           <div key={key++} className="overflow-x-auto my-6">
             <table className="w-full border-collapse text-sm">
-              {rows.map((row, rowIdx) => {
-                const cells = row.split("|").filter((c) => c.trim() !== "");
-                return (
-                  <tr key={rowIdx} className={rowIdx === 0 ? "bg-navy-900 text-white" : rowIdx % 2 === 0 ? "bg-gray-50" : "bg-white"}>
-                    {cells.map((cell, cellIdx) =>
-                      rowIdx === 0 ? (
+              {rows.length > 0 && (
+                <thead>
+                  <tr className="bg-navy-900 text-white">
+                    {rows[0]
+                      .split("|")
+                      .filter((c) => c.trim() !== "")
+                      .map((cell, cellIdx) => (
                         <th key={cellIdx} className="px-4 py-3 text-left font-semibold">
                           {cell.trim()}
                         </th>
-                      ) : (
+                      ))}
+                  </tr>
+                </thead>
+              )}
+              <tbody>
+                {rows.slice(1).map((row, rowIdx) => {
+                  const cells = row.split("|").filter((c) => c.trim() !== "");
+                  return (
+                    <tr key={rowIdx} className={rowIdx % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                      {cells.map((cell, cellIdx) => (
                         <td key={cellIdx} className="px-4 py-3 border-b border-gray-100">
                           {cell.trim()}
                         </td>
-                      )
-                    )}
-                  </tr>
-                );
-              })}
+                      ))}
+                    </tr>
+                  );
+                })}
+              </tbody>
             </table>
           </div>
         );
@@ -310,7 +321,7 @@ export default async function BlogPostPage({ params }: Props) {
                   Book Consultation
                 </Link>
                 <a
-                  href="https://wa.me/919876543210"
+                  href={whatsappLink()}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full text-center px-4 py-3 bg-green-500 text-white font-semibold rounded-xl hover:bg-green-600 transition-colors text-sm"

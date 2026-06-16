@@ -92,16 +92,18 @@ Update in these files:
 - `components/layout/Footer.tsx` — contact info, social links
 
 ### Contact Information
-Replace placeholders:
-- Phone: `+91 123 456 7890`
-- WhatsApp: `+91 987 654 3210`
-- Email: `info@indiavisaexperts.com`
+All contact details (phone, WhatsApp, email, address, social links) live in a
+single source of truth: `data/contact.ts`. Edit values there and they propagate
+to the header, footer, contact page, WhatsApp buttons, JSON-LD schema, and every
+contact/newsletter form. The social URLs there are still placeholders — replace
+them with the real profile links.
 
-### WhatsApp Integration
-Update `components/widgets/WhatsAppButton.tsx`:
-```ts
-const phoneNumber = "91YOUR_NUMBER_HERE"; // without + sign
-```
+### Forms
+Contact and newsletter forms currently submit via `mailto:` (they open the
+visitor's email app pre-addressed to the business inbox — no backend required).
+To capture leads automatically, swap the `mailto:` in `ContactForm.tsx` /
+`NewsletterForm.tsx` for a POST to an email provider (Web3Forms, Formspree,
+Resend, or a Cloudflare email worker).
 
 ### Company Name
 Replace `India Visa Experts` throughout with your actual company name.

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Send, CheckCircle } from "lucide-react";
+import { contact, mailtoLink } from "@/data/contact";
 
 const services = [
   "Business Visa",
@@ -59,6 +60,19 @@ export default function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const subject = `Consultation Inquiry — ${formData.service || "General"}`;
+    const body = [
+      `Name: ${formData.name}`,
+      `Email: ${formData.email}`,
+      `Country of Nationality: ${formData.country}`,
+      `Phone / WhatsApp: ${formData.phone || "—"}`,
+      `Service Needed: ${formData.service}`,
+      "",
+      "Message:",
+      formData.message,
+    ].join("\n");
+    // No backend yet — open the visitor's mail app pre-addressed to our inbox.
+    window.location.href = mailtoLink({ subject, body });
     setSubmitted(true);
   };
 
@@ -69,11 +83,15 @@ export default function ContactForm() {
           <CheckCircle className="w-8 h-8 text-green-600" />
         </div>
         <h3 className="font-display font-bold text-navy-900 text-2xl mb-2">
-          Thank You!
+          Almost there!
         </h3>
         <p className="text-gray-600 max-w-sm">
-          We have received your inquiry and will respond within 24 hours. For urgent matters, please
-          WhatsApp us directly.
+          Your email app should have opened with your inquiry pre-filled — just press send and we&apos;ll
+          respond within 24 hours. If it didn&apos;t open, email us directly at{" "}
+          <a href={`mailto:${contact.email}`} className="text-navy-700 font-semibold underline">
+            {contact.email}
+          </a>{" "}
+          or WhatsApp us.
         </p>
       </div>
     );

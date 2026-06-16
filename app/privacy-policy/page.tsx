@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { contact } from "@/data/contact";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | India Visa Experts",
@@ -94,8 +95,8 @@ export default function PrivacyPolicyPage() {
               <h2 className="font-display text-2xl font-bold text-navy-900 mb-3">8. Contact Us</h2>
               <p className="leading-relaxed">
                 For privacy-related queries, contact us at:{" "}
-                <a href="mailto:privacy@indiavisaexperts.com" className="text-navy-700 underline">
-                  privacy@indiavisaexperts.com
+                <a href={`mailto:${contact.email}`} className="text-navy-700 underline">
+                  {contact.email}
                 </a>
               </p>
             </div>

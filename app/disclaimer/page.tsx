@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { contact } from "@/data/contact";
 
 export const metadata: Metadata = {
   title: "Disclaimer | India Visa Experts",
@@ -85,8 +86,8 @@ export default function DisclaimerPage() {
               </h2>
               <p className="leading-relaxed">
                 If you have any questions about this disclaimer, please contact us at{" "}
-                <a href="mailto:info@indiavisaexperts.com" className="text-navy-700 underline">
-                  info@indiavisaexperts.com
+                <a href={`mailto:${contact.email}`} className="text-navy-700 underline">
+                  {contact.email}
                 </a>
                 .
               </p>

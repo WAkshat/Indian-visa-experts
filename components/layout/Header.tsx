@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown, Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { contact } from "@/data/contact";
 
 const services = [
   { label: "Business Visa", href: "/business-visa-india" },
@@ -58,17 +59,17 @@ export default function Header() {
             <span>Independent Visa & Immigration Consulting — Not affiliated with any government agency</span>
             <div className="flex items-center gap-4">
               <a
-                href="tel:+911234567890"
+                href={`tel:${contact.phoneTel}`}
                 className="flex items-center gap-1.5 hover:text-gold-400 transition-colors"
               >
                 <Phone className="w-3 h-3" />
-                <span>+91 123 456 7890</span>
+                <span>{contact.phoneDisplay}</span>
               </a>
               <a
-                href="mailto:info@indiavisaexperts.com"
+                href={`mailto:${contact.email}`}
                 className="hover:text-gold-400 transition-colors"
               >
-                info@indiavisaexperts.com
+                {contact.email}
               </a>
             </div>
           </div>

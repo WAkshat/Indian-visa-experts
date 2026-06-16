@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { Linkedin, Facebook, Instagram, Twitter, Youtube, Phone, Mail, MapPin } from "lucide-react";
+import { contact } from "@/data/contact";
+import NewsletterForm from "@/components/forms/NewsletterForm";
 
 const footerServices = [
   { label: "Business Visa", href: "/business-visa-india" },
@@ -31,11 +33,11 @@ const footerResources = [
 ];
 
 const socialLinks = [
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Facebook, href: "https://facebook.com", label: "Facebook" },
-  { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
-  { icon: Twitter, href: "https://twitter.com", label: "X (Twitter)" },
-  { icon: Youtube, href: "https://youtube.com", label: "YouTube" },
+  { icon: Linkedin, href: contact.social.linkedin, label: "LinkedIn" },
+  { icon: Facebook, href: contact.social.facebook, label: "Facebook" },
+  { icon: Instagram, href: contact.social.instagram, label: "Instagram" },
+  { icon: Twitter, href: contact.social.twitter, label: "X (Twitter)" },
+  { icon: Youtube, href: contact.social.youtube, label: "YouTube" },
 ];
 
 export default function Footer() {
@@ -53,19 +55,14 @@ export default function Footer() {
                 Get the latest news, guides, and compliance updates.
               </p>
             </div>
-            <form className="flex gap-3 w-full md:w-auto" onSubmit={(e) => e.preventDefault()}>
-              <input
-                type="email"
-                placeholder="Your email address"
-                className="flex-1 md:w-72 px-4 py-2.5 bg-white/10 border border-white/20 rounded-lg text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent text-sm"
-              />
-              <button
-                type="submit"
-                className="px-5 py-2.5 bg-gold-500 text-navy-900 font-semibold text-sm rounded-lg hover:bg-gold-400 transition-colors whitespace-nowrap"
-              >
-                Subscribe
-              </button>
-            </form>
+            <NewsletterForm
+              wrapperClassName="w-full md:w-auto"
+              rowClassName="flex gap-3 w-full"
+              inputClassName="flex-1 md:w-72 px-4 py-2.5 bg-white/10 border border-white/20 rounded-lg text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent text-sm"
+              buttonClassName="px-5 py-2.5 bg-gold-500 text-navy-900 font-semibold text-sm rounded-lg hover:bg-gold-400 transition-colors whitespace-nowrap"
+              successClassName="text-white/80 text-sm"
+              errorClassName="text-red-300 text-xs mt-2"
+            />
           </div>
         </div>
       </div>
@@ -96,22 +93,22 @@ export default function Footer() {
               <div className="flex items-start gap-3 text-sm text-white/70">
                 <Phone className="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" />
                 <div>
-                  <a href="tel:+911234567890" className="hover:text-gold-400 transition-colors">
-                    +91 123 456 7890
+                  <a href={`tel:${contact.phoneTel}`} className="hover:text-gold-400 transition-colors">
+                    {contact.phoneDisplay}
                   </a>
                 </div>
               </div>
               <div className="flex items-start gap-3 text-sm text-white/70">
                 <Mail className="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" />
                 <div>
-                  <a href="mailto:info@indiavisaexperts.com" className="hover:text-gold-400 transition-colors">
-                    info@indiavisaexperts.com
+                  <a href={`mailto:${contact.email}`} className="hover:text-gold-400 transition-colors">
+                    {contact.email}
                   </a>
                 </div>
               </div>
               <div className="flex items-start gap-3 text-sm text-white/70">
                 <MapPin className="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" />
-                <div>New Delhi & Mumbai, India</div>
+                <div>{contact.address.full}</div>
               </div>
             </div>
 

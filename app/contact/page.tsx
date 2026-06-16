@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Phone, Mail, MapPin, Clock, MessageCircle, Linkedin, Facebook } from "lucide-react";
 import ContactForm from "@/components/forms/ContactForm";
+import NewsletterForm from "@/components/forms/NewsletterForm";
+import { contact, whatsappLink } from "@/data/contact";
 
 export const metadata: Metadata = {
   title: "Contact India Visa Experts | Book a Free Consultation",
@@ -18,28 +20,28 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    detail: "+91 123 456 7890",
-    action: "tel:+911234567890",
+    detail: contact.phoneDisplay,
+    action: `tel:${contact.phoneTel}`,
     label: "Call us",
   },
   {
     icon: MessageCircle,
     title: "WhatsApp",
-    detail: "+91 987 654 3210",
-    action: "https://wa.me/919876543210",
+    detail: contact.phoneDisplay,
+    action: whatsappLink(),
     label: "WhatsApp us",
   },
   {
     icon: Mail,
     title: "Email",
-    detail: "info@indiavisaexperts.com",
-    action: "mailto:info@indiavisaexperts.com",
+    detail: contact.email,
+    action: `mailto:${contact.email}`,
     label: "Email us",
   },
   {
     icon: MapPin,
-    title: "Offices",
-    detail: "New Delhi & Mumbai, India",
+    title: "Office",
+    detail: contact.address.full,
     action: null,
     label: null,
   },
@@ -125,7 +127,7 @@ export default function ContactPage() {
                 <h3 className="font-semibold mb-3 text-sm">Connect With Us</h3>
                 <div className="flex gap-3">
                   <a
-                    href="https://linkedin.com"
+                    href={contact.social.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center hover:bg-gold-500 hover:text-navy-900 transition-all"
@@ -134,7 +136,7 @@ export default function ContactPage() {
                     <Linkedin className="w-4 h-4" />
                   </a>
                   <a
-                    href="https://facebook.com"
+                    href={contact.social.facebook}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center hover:bg-gold-500 hover:text-navy-900 transition-all"
@@ -143,7 +145,7 @@ export default function ContactPage() {
                     <Facebook className="w-4 h-4" />
                   </a>
                   <a
-                    href="https://wa.me/919876543210"
+                    href={whatsappLink()}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center hover:bg-green-500 transition-all"
@@ -188,19 +190,21 @@ export default function ContactPage() {
               Download our comprehensive checklist covering all documents required for an Indian Business
               Visa application. Avoid common mistakes and rejection risks.
             </p>
-            <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-3 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500"
-              />
-              <button
-                type="submit"
-                className="px-6 py-3 bg-gold-500 text-navy-900 font-bold rounded-xl hover:bg-gold-400 transition-colors whitespace-nowrap"
-              >
-                Get Free PDF
-              </button>
-            </form>
+            <NewsletterForm
+              subject="Request: Free India Business Visa Checklist"
+              cta="Get Free PDF"
+              placeholder="Enter your email"
+              successText="Thanks! Your email app will open — send it and we'll reply with the checklist PDF."
+              messageTemplate={
+                "Hello India Visa Experts team,\n\nPlease send me the free India Business Visa document checklist.\n\nMy email: {email}"
+              }
+              wrapperClassName="max-w-md mx-auto w-full"
+              rowClassName="flex flex-col sm:flex-row gap-3"
+              inputClassName="flex-1 px-4 py-3 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500"
+              buttonClassName="px-6 py-3 bg-gold-500 text-navy-900 font-bold rounded-xl hover:bg-gold-400 transition-colors whitespace-nowrap"
+              successClassName="text-white/80 text-sm"
+              errorClassName="text-red-300 text-xs mt-2"
+            />
             <p className="text-xs text-white/40 mt-4">
               No spam. We only send immigration guides and important updates.
             </p>
