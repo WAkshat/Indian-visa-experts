@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Play } from "lucide-react";
+import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import YouTubeEmbed from "@/components/media/YouTubeEmbed";
 import AnimatedSection from "@/components/media/AnimatedSection";
@@ -79,21 +80,14 @@ export default function VideoSection() {
                 transition={defaultTransition}
                 className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-navy-900 ring-1 ring-white/10 group"
               >
-                <video
-                  controls
-                  playsInline
-                  preload="metadata"
-                  poster={media.consultation.poster}
-                  className="w-full h-full object-cover"
-                >
-                  <source src={media.consultation.video} type="video/mp4" />
-                  Your browser does not support embedded video.
-                </video>
-                <div className="absolute top-4 left-4 flex items-center gap-2 px-3 py-1.5 rounded-full bg-navy-900/80 backdrop-blur-sm text-white/80 text-xs pointer-events-none">
-                  <Play className="w-3 h-3 text-gold-400" />
-                  Replace with your own video in{" "}
-                  <code className="text-gold-400">data/media.ts</code>
-                </div>
+                <Image
+                  src={media.consultation.image}
+                  alt="India Visa Advisory consultant explaining the visa process to a client"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover transition-transform duration-700 ease-out-expo group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-950/55 via-navy-950/10 to-transparent" />
               </motion.div>
             )}
           </motion.div>

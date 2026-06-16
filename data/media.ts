@@ -17,6 +17,9 @@ export const media = {
   consultation: {
     poster: "/images/about-consultation.jpg",
     video: "/videos/consultation.mp4",
+    /** Static image shown in the homepage "Expert Guidance" section when no YouTube video is set. */
+    image:
+      "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80",
   },
   lottie: {
     documents: "/animations/documents.json",
