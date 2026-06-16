@@ -35,12 +35,12 @@ export const blogPosts: BlogPost[] = [
       "Everything you need to know about applying for an Indian Business Visa — from eligibility and required documents to the step-by-step application process and expert tips.",
     category: "Business Visa",
     tags: ["Business Visa", "India", "Visa Guide", "Foreign Nationals"],
-    author: "India Visa Advisory Team",
+    author: "India Visa Experts Team",
     authorTitle: "Immigration Specialists",
     publishedAt: "2024-01-15",
     readTime: 10,
     featured: true,
-    metaTitle: "Complete Guide to Indian Business Visa 2024 | India Visa Advisory",
+    metaTitle: "Complete Guide to Indian Business Visa 2024 | India Visa Experts",
     metaDescription:
       "Comprehensive guide to Indian Business Visa requirements, eligibility, documents needed, and the application process. Expert tips from India's trusted immigration consultants.",
     keywords: ["India Business Visa", "Business Visa India guide", "Indian visa requirements business"],
@@ -196,7 +196,7 @@ We recommend applying at least 4 weeks before your travel date. For complex case
 
 ## Disclaimer
 
-India Visa Advisory is an independent consulting firm. We are not affiliated with the Government of India, Ministry of External Affairs, or any government agency. Visa decisions are made solely by the relevant authorities. The information in this article is for general guidance only and may not reflect the most current regulations. Always verify requirements with the relevant Indian embassy or consulate.`,
+India Visa Experts is an independent consulting firm. We are not affiliated with the Government of India, Ministry of External Affairs, or any government agency. Visa decisions are made solely by the relevant authorities. The information in this article is for general guidance only and may not reflect the most current regulations. Always verify requirements with the relevant Indian embassy or consulate.`,
   },
   {
     slug: "business-visa-vs-employment-visa",
@@ -205,7 +205,7 @@ India Visa Advisory is an independent consulting firm. We are not affiliated wit
       "Understanding the critical differences between an Indian Business Visa and an Employment Visa can save you significant time and legal complications. This guide breaks down both visa types clearly.",
     category: "Business Visa",
     tags: ["Business Visa", "Employment Visa", "Comparison", "India Immigration"],
-    author: "India Visa Advisory Team",
+    author: "India Visa Experts Team",
     authorTitle: "Immigration Specialists",
     publishedAt: "2024-01-22",
     readTime: 8,
@@ -346,7 +346,7 @@ You can discuss and plan a company registration on a Business Visa, but the actu
 
 ## Disclaimer
 
-India Visa Advisory is an independent private consulting firm. We are not affiliated with the Government of India, Ministry of External Affairs, or any government agency. All visa decisions are made solely by the relevant government authorities. This article is for general informational purposes only.`,
+India Visa Experts is an independent private consulting firm. We are not affiliated with the Government of India, Ministry of External Affairs, or any government agency. All visa decisions are made solely by the relevant government authorities. This article is for general informational purposes only.`,
   },
   {
     slug: "frro-registration-india-explained",
@@ -355,7 +355,7 @@ India Visa Advisory is an independent private consulting firm. We are not affili
       "FRRO registration is mandatory for most foreign nationals staying in India beyond 180 days. This comprehensive guide explains what it is, who needs it, how to register, and how to stay compliant.",
     category: "FRRO & Registration",
     tags: ["FRRO", "Registration", "Compliance", "Residential Permit"],
-    author: "India Visa Advisory Team",
+    author: "India Visa Experts Team",
     authorTitle: "Immigration Specialists",
     publishedAt: "2024-02-05",
     readTime: 12,
@@ -523,7 +523,7 @@ Contact an immigration consultant immediately. Late registration attracts a pena
 
 ## Disclaimer
 
-India Visa Advisory is an independent private consulting firm. We are not affiliated with the Government of India, FRRO, or any government agency. All immigration decisions are made solely by the relevant authorities. This guide is for general informational purposes only and should not be treated as legal advice.`,
+India Visa Experts is an independent private consulting firm. We are not affiliated with the Government of India, FRRO, or any government agency. All immigration decisions are made solely by the relevant authorities. This guide is for general informational purposes only and should not be treated as legal advice.`,
   },
   {
     slug: "understanding-x-visa-india",
@@ -532,7 +532,7 @@ India Visa Advisory is an independent private consulting firm. We are not affili
       "The X Visa (Dependent Visa) allows spouses and dependents of foreign nationals working in India to join them. This complete guide explains eligibility, documents, process, and what you can and cannot do.",
     category: "Visa Types",
     tags: ["X Visa", "Dependent Visa", "Spouse Visa", "Family India"],
-    author: "India Visa Advisory Team",
+    author: "India Visa Experts Team",
     authorTitle: "Immigration Specialists",
     publishedAt: "2024-02-19",
     readTime: 9,
@@ -679,7 +679,7 @@ Your X Visa remains technically valid until its expiry, but since your grounds f
 
 ## Disclaimer
 
-India Visa Advisory is an independent private consulting firm. We are not affiliated with the Government of India, Ministry of External Affairs, or any government authority. All visa decisions are made solely by the relevant authorities. This article is for general informational purposes and should not be treated as legal advice.`,
+India Visa Experts is an independent private consulting firm. We are not affiliated with the Government of India, Ministry of External Affairs, or any government authority. All visa decisions are made solely by the relevant authorities. This article is for general informational purposes and should not be treated as legal advice.`,
   },
   {
     slug: "common-visa-rejection-reasons",
@@ -688,7 +688,7 @@ India Visa Advisory is an independent private consulting firm. We are not affili
       "A visa rejection can be frustrating and costly. Understanding the most common reasons why Indian visa applications are rejected is the first step to building a stronger application.",
     category: "India Immigration",
     tags: ["Visa Rejection", "India Visa Tips", "Application Guide", "Common Mistakes"],
-    author: "India Visa Advisory Team",
+    author: "India Visa Experts Team",
     authorTitle: "Immigration Specialists",
     publishedAt: "2024-03-04",
     readTime: 9,
@@ -819,7 +819,7 @@ No consultant can guarantee a visa approval. What a consultant can do is identif
 
 ## Disclaimer
 
-India Visa Advisory is an independent private consulting firm. We are not affiliated with the Government of India, Ministry of External Affairs, or any government agency. Visa decisions are made solely by the relevant authorities. This article is for general informational purposes only.`,
+India Visa Experts is an independent private consulting firm. We are not affiliated with the Government of India, Ministry of External Affairs, or any government agency. Visa decisions are made solely by the relevant authorities. This article is for general informational purposes only.`,
   },
   {
     slug: "documents-required-business-visa",
@@ -828,7 +828,7 @@ India Visa Advisory is an independent private consulting firm. We are not affili
       "Don't let a missing document derail your Indian Business Visa application. This definitive checklist covers every document you need, with expert guidance on each requirement.",
     category: "Business Visa",
     tags: ["Business Visa", "Documents", "Checklist", "Visa Application"],
-    author: "India Visa Advisory Team",
+    author: "India Visa Experts Team",
     authorTitle: "Immigration Specialists",
     publishedAt: "2024-03-18",
     readTime: 7,
@@ -974,7 +974,7 @@ Eligibility for e-Visa varies by nationality. Check the current list of eligible
 
 ## How We Help
 
-At India Visa Advisory, we:
+At India Visa Experts, we:
 - Provide tailored document checklists for your specific situation
 - Review all your documents before submission
 - Draft or review invitation letters and employer letters
@@ -983,7 +983,7 @@ At India Visa Advisory, we:
 
 ## Disclaimer
 
-India Visa Advisory is an independent private consulting firm. We are not affiliated with the Government of India, Ministry of External Affairs, or any government agency. Document requirements can change, and consulate-specific requirements may vary. Always verify with the relevant Indian embassy or consulate or consult an immigration professional for the most current requirements.`,
+India Visa Experts is an independent private consulting firm. We are not affiliated with the Government of India, Ministry of External Affairs, or any government agency. Document requirements can change, and consulate-specific requirements may vary. Always verify with the relevant Indian embassy or consulate or consult an immigration professional for the most current requirements.`,
   },
   {
     slug: "visa-extension-india-guide",
@@ -992,7 +992,7 @@ India Visa Advisory is an independent private consulting firm. We are not affili
       "Need to extend your stay in India? This guide explains who can extend their visa, how the FRRO extension process works, what documents you need, and expert tips to maximize your chances of approval.",
     category: "FRRO & Registration",
     tags: ["Visa Extension", "FRRO", "India Stay", "Long Stay India"],
-    author: "India Visa Advisory Team",
+    author: "India Visa Experts Team",
     authorTitle: "Immigration Specialists",
     publishedAt: "2024-04-02",
     readTime: 10,
@@ -1167,7 +1167,7 @@ This depends on the visa type, the grounds for extension, and FRRO discretion. E
 
 ## Disclaimer
 
-India Visa Advisory is an independent private consulting firm. We are not affiliated with the Government of India, FRRO, or any government agency. Visa extension decisions are made solely by the FRRO or relevant authorities. This article is for general informational purposes only and should not be treated as legal advice.`,
+India Visa Experts is an independent private consulting firm. We are not affiliated with the Government of India, FRRO, or any government agency. Visa extension decisions are made solely by the FRRO or relevant authorities. This article is for general informational purposes only and should not be treated as legal advice.`,
   },
   {
     slug: "foreign-companies-operating-india",
@@ -1176,7 +1176,7 @@ India Visa Advisory is an independent private consulting firm. We are not affili
       "Setting up operations in India involves choosing the right business structure, managing foreign national visas, and maintaining ongoing compliance. This guide covers all the essentials.",
     category: "Foreign Companies",
     tags: ["Foreign Company", "India Operations", "Business Setup", "Compliance"],
-    author: "India Visa Advisory Team",
+    author: "India Visa Experts Team",
     authorTitle: "Immigration Specialists",
     publishedAt: "2024-04-16",
     readTime: 12,
@@ -1331,7 +1331,7 @@ Employers do not face direct criminal liability for an employee's overstay in mo
 
 ## Disclaimer
 
-India Visa Advisory is an independent private consulting firm. We are not affiliated with the Government of India, Ministry of External Affairs, FRRO, or any government agency. All decisions regarding entity structure, visa eligibility, and compliance are made by the relevant government authorities. This article is for general informational purposes only.`,
+India Visa Experts is an independent private consulting firm. We are not affiliated with the Government of India, Ministry of External Affairs, FRRO, or any government agency. All decisions regarding entity structure, visa eligibility, and compliance are made by the relevant government authorities. This article is for general informational purposes only.`,
   },
   {
     slug: "oci-vs-x-visa-india",
@@ -1340,7 +1340,7 @@ India Visa Advisory is an independent private consulting firm. We are not affili
       "If you're a foreign national with Indian connections or married to an Indian citizen, you may qualify for either an OCI card or an X Visa. This guide explains the key differences and helps you decide which is right for your situation.",
     category: "OCI & PIO",
     tags: ["OCI Card", "X Visa", "Comparison", "Indian Diaspora"],
-    author: "India Visa Advisory Team",
+    author: "India Visa Experts Team",
     authorTitle: "Immigration Specialists",
     publishedAt: "2024-05-07",
     readTime: 8,
@@ -1486,7 +1486,7 @@ OCI cards do not expire, but they must be re-registered (updated) when you get a
 
 ## Disclaimer
 
-India Visa Advisory is an independent private consulting firm. We are not affiliated with the Government of India, Ministry of External Affairs, or any government agency. All decisions regarding visa issuance and OCI status are made solely by the relevant authorities. This article is for general informational purposes only.`,
+India Visa Experts is an independent private consulting firm. We are not affiliated with the Government of India, Ministry of External Affairs, or any government agency. All decisions regarding visa issuance and OCI status are made solely by the relevant authorities. This article is for general informational purposes only.`,
   },
   {
     slug: "foreign-national-compliance-india",
@@ -1495,7 +1495,7 @@ India Visa Advisory is an independent private consulting firm. We are not affili
       "Foreign nationals in India must comply with a range of immigration, registration, and reporting requirements. This comprehensive guide covers everything you need to know to stay compliant during your stay.",
     category: "Compliance",
     tags: ["Compliance", "Foreign Nationals", "Immigration Law", "FRRO", "India"],
-    author: "India Visa Advisory Team",
+    author: "India Visa Experts Team",
     authorTitle: "Immigration Specialists",
     publishedAt: "2024-05-21",
     readTime: 11,
@@ -1671,6 +1671,6 @@ Yes. The FRRO has powers to recommend cancellation of a visa for visa condition 
 
 ## Disclaimer
 
-India Visa Advisory is an independent private consulting firm. We are not affiliated with the Government of India, Foreigners Regional Registration Office, Ministry of External Affairs, or any government agency. Compliance requirements are set by the relevant government authorities. This article is for general informational purposes only and should not be treated as legal advice.`,
+India Visa Experts is an independent private consulting firm. We are not affiliated with the Government of India, Foreigners Regional Registration Office, Ministry of External Affairs, or any government agency. Compliance requirements are set by the relevant government authorities. This article is for general informational purposes only and should not be treated as legal advice.`,
   },
 ];

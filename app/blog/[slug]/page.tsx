@@ -210,7 +210,7 @@ export default async function BlogPostPage({ params }: Props) {
 
           <div className="flex items-center gap-3 text-sm text-white/50">
             <div className="w-8 h-8 rounded-full bg-gold-500 flex items-center justify-center text-navy-900 font-bold text-xs flex-shrink-0">
-              IVA
+              IVE
             </div>
             <div>
               <span className="text-white/70 font-medium">{post.author}</span>
@@ -250,7 +250,7 @@ export default async function BlogPostPage({ params }: Props) {
                 <div>
                   <p className="text-sm font-semibold text-amber-700 mb-1">Disclaimer</p>
                   <p className="text-xs text-amber-600 leading-relaxed">
-                    India Visa Advisory is an independent visa and immigration consulting service. We
+                    India Visa Experts is an independent visa and immigration consulting service. We
                     are not affiliated with the Government of India, Ministry of External Affairs
                     (MEA), FRRO, or any government agency. Visa decisions are made solely by the
                     relevant authorities. This article is for general informational purposes only and

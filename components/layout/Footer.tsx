@@ -77,10 +77,10 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-lg bg-gold-500 flex items-center justify-center flex-shrink-0">
-                <span className="text-navy-900 font-bold text-lg">IVA</span>
+                <span className="text-navy-900 font-bold text-lg">IVE</span>
               </div>
               <div>
-                <div className="font-display font-bold text-lg text-white">India Visa Advisory</div>
+                <div className="font-display font-bold text-lg text-white">India Visa Experts</div>
                 <div className="text-xs text-white/50">Immigration Consulting</div>
               </div>
             </Link>
@@ -104,8 +104,8 @@ export default function Footer() {
               <div className="flex items-start gap-3 text-sm text-white/70">
                 <Mail className="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" />
                 <div>
-                  <a href="mailto:info@indiavisaadvisory.com" className="hover:text-gold-400 transition-colors">
-                    info@indiavisaadvisory.com
+                  <a href="mailto:info@indiavisaexperts.com" className="hover:text-gold-400 transition-colors">
+                    info@indiavisaexperts.com
                   </a>
                 </div>
               </div>
@@ -201,7 +201,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/40">
-            <span>© {new Date().getFullYear()} India Visa Advisory. All rights reserved.</span>
+            <span>© {new Date().getFullYear()} India Visa Experts. All rights reserved.</span>
             <div className="flex items-center gap-4">
               <Link href="/privacy-policy" className="hover:text-white/60 transition-colors">
                 Privacy Policy

@@ -50,7 +50,7 @@ export default function WhyChooseUs() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block text-xs font-semibold tracking-widest text-gold-600 uppercase mb-3">
-            Why India Visa Advisory
+            Why India Visa Experts
           </span>
           <h2 className="section-heading mb-4">
             Professional Guidance You Can Trust

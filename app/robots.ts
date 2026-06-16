@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/api/",
     },
-    sitemap: "https://indiavisaadvisory.com/sitemap.xml",
+    sitemap: "https://indiavisaexperts.com/sitemap.xml",
   };
 }

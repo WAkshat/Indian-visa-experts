@@ -65,10 +65,10 @@ export default function Header() {
                 <span>+91 123 456 7890</span>
               </a>
               <a
-                href="mailto:info@indiavisaadvisory.com"
+                href="mailto:info@indiavisaexperts.com"
                 className="hover:text-gold-400 transition-colors"
               >
-                info@indiavisaadvisory.com
+                info@indiavisaexperts.com
               </a>
             </div>
           </div>
@@ -81,7 +81,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 flex-shrink-0">
             <div className="w-10 h-10 rounded-lg bg-gold-500 flex items-center justify-center">
-              <span className="text-navy-900 font-bold text-lg">IVA</span>
+              <span className="text-navy-900 font-bold text-lg">IVE</span>
             </div>
             <div>
               <div
@@ -90,7 +90,7 @@ export default function Header() {
                   isScrolled ? "text-navy-900" : "text-white"
                 )}
               >
-                India Visa Advisory
+                India Visa Experts
               </div>
               <div
                 className={cn(

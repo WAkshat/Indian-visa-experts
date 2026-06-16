@@ -177,9 +177,9 @@ export const faqs: FAQ[] = [
   {
     id: 24,
     category: "Compliance",
-    question: "Is India Visa Advisory affiliated with the Indian Government?",
+    question: "Is India Visa Experts affiliated with the Indian Government?",
     answer:
-      "No. India Visa Advisory is an independent private consulting firm. We are not affiliated with the Government of India, the Ministry of External Affairs (MEA), FRRO, or any government agency. All visa decisions are made solely by the relevant government authorities. We provide expert guidance to assist your application.",
+      "No. India Visa Experts is an independent private consulting firm. We are not affiliated with the Government of India, the Ministry of External Affairs (MEA), FRRO, or any government agency. All visa decisions are made solely by the relevant government authorities. We provide expert guidance to assist your application.",
   },
   {
     id: 25,

@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "India Visa Advisory — Business Visa & Immigration Consulting India";
+export const alt = "India Visa Experts — Business Visa & Immigration Consulting India";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -38,10 +38,10 @@ export default function OpengraphImage() {
               fontWeight: 700,
             }}
           >
-            IVA
+            IVE
           </div>
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <div style={{ fontSize: "30px", fontWeight: 700 }}>India Visa Advisory</div>
+            <div style={{ fontSize: "30px", fontWeight: 700 }}>India Visa Experts</div>
             <div style={{ fontSize: "20px", color: "rgba(255,255,255,0.6)" }}>
               Immigration Consulting
             </div>
@@ -80,7 +80,7 @@ export default function OpengraphImage() {
           }}
         >
           <div style={{ fontSize: "22px", color: "#fbbf24", fontWeight: 600 }}>
-            indiavisaadvisory.com
+            indiavisaexperts.com
           </div>
           <div style={{ fontSize: "18px", color: "rgba(255,255,255,0.4)" }}>
             Independent service · Not a government agency

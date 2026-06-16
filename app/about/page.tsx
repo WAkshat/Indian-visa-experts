@@ -5,12 +5,12 @@ import { Shield, Target, Eye, Award, Building2, Users, Globe } from "lucide-reac
 import CTASection from "@/components/sections/CTASection";
 
 export const metadata: Metadata = {
-  title: "About India Visa Advisory | Independent Immigration Consulting",
+  title: "About India Visa Experts | Independent Immigration Consulting",
   description:
-    "Learn about India Visa Advisory — an independent immigration consulting firm providing expert guidance on India visas, FRRO compliance, and foreign national immigration services.",
+    "Learn about India Visa Experts — an independent immigration consulting firm providing expert guidance on India visas, FRRO compliance, and foreign national immigration services.",
   alternates: { canonical: "/about" },
   openGraph: {
-    title: "About India Visa Advisory | Independent Immigration Consulting",
+    title: "About India Visa Experts | Independent Immigration Consulting",
     description:
       "An independent consulting firm providing expert India visa and immigration guidance to foreign nationals, companies, and families.",
   },
@@ -94,7 +94,7 @@ export default function AboutPage() {
             Your Trusted Partner for India Immigration
           </h1>
           <p className="text-lg md:text-xl text-white/70 leading-relaxed">
-            India Visa Advisory is an independent consulting firm providing expert, personalized guidance
+            India Visa Experts is an independent consulting firm providing expert, personalized guidance
             on Indian visa and immigration matters to foreign nationals, international companies, and their
             families.
           </p>
@@ -132,7 +132,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  India Visa Advisory was founded with a single purpose: to make India&apos;s complex visa
+                  India Visa Experts was founded with a single purpose: to make India&apos;s complex visa
                   and immigration process accessible, transparent, and manageable for foreign nationals
                   and the companies that employ them.
                 </p>
@@ -237,7 +237,7 @@ export default function AboutPage() {
                 For Companies
               </span>
               <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-6">
-                Why Businesses Choose India Visa Advisory
+                Why Businesses Choose India Visa Experts
               </h2>
               <div className="space-y-4 text-white/70 leading-relaxed">
                 <p>
@@ -295,7 +295,7 @@ export default function AboutPage() {
               <div>
                 <h4 className="font-semibold text-navy-900 mb-1 text-sm">Important Disclaimer</h4>
                 <p className="text-xs text-gray-500 leading-relaxed">
-                  India Visa Advisory is an independent private consulting firm. We are not affiliated
+                  India Visa Experts is an independent private consulting firm. We are not affiliated
                   with the Government of India, Ministry of External Affairs (MEA), Foreigners Regional
                   Registration Office (FRRO), or any government agency. We are not a law firm and do not
                   provide legal advice. All visa and immigration decisions are made solely by the

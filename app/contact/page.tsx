@@ -3,12 +3,12 @@ import { Phone, Mail, MapPin, Clock, MessageCircle, Linkedin, Facebook } from "l
 import ContactForm from "@/components/forms/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact India Visa Advisory | Book a Free Consultation",
+  title: "Contact India Visa Experts | Book a Free Consultation",
   description:
-    "Contact India Visa Advisory for expert guidance on India visas, FRRO registration, and immigration compliance. Book a free initial consultation with our team.",
+    "Contact India Visa Experts for expert guidance on India visas, FRRO registration, and immigration compliance. Book a free initial consultation with our team.",
   alternates: { canonical: "/contact" },
   openGraph: {
-    title: "Contact India Visa Advisory | Book a Free Consultation",
+    title: "Contact India Visa Experts | Book a Free Consultation",
     description:
       "Get in touch with India's trusted immigration consultants. Free initial consultation available.",
   },
@@ -32,8 +32,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    detail: "info@indiavisaadvisory.com",
-    action: "mailto:info@indiavisaadvisory.com",
+    detail: "info@indiavisaexperts.com",
+    action: "mailto:info@indiavisaexperts.com",
     label: "Email us",
   },
   {

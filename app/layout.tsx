@@ -23,10 +23,10 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://indiavisaadvisory.com"),
+  metadataBase: new URL("https://indiavisaexperts.com"),
   title: {
-    default: "India Visa Advisory | Business Visa, Employment Visa & Immigration Consulting",
-    template: "%s | India Visa Advisory",
+    default: "India Visa Experts | Business Visa, Employment Visa & Immigration Consulting",
+    template: "%s | India Visa Experts",
   },
   description:
     "Expert India visa and immigration consulting for foreign nationals, companies, and families. Business Visa, Employment Visa, X Visa, FRRO Registration, and compliance services.",
@@ -40,22 +40,22 @@ export const metadata: Metadata = {
     "Visa extension India",
     "OCI card India",
   ],
-  authors: [{ name: "India Visa Advisory" }],
-  creator: "India Visa Advisory",
-  publisher: "India Visa Advisory",
+  authors: [{ name: "India Visa Experts" }],
+  creator: "India Visa Experts",
+  publisher: "India Visa Experts",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://indiavisaadvisory.com",
-    siteName: "India Visa Advisory",
-    title: "India Visa Advisory | Business Visa & Immigration Consulting",
+    url: "https://indiavisaexperts.com",
+    siteName: "India Visa Experts",
+    title: "India Visa Experts | Business Visa & Immigration Consulting",
     description:
       "Your trusted partner for India visa and immigration. Expert guidance on Business Visa, Employment Visa, FRRO Registration, and foreign national compliance.",
     // og:image is supplied automatically by app/opengraph-image.tsx
   },
   twitter: {
     card: "summary_large_image",
-    title: "India Visa Advisory | Business Visa & Immigration Consulting",
+    title: "India Visa Experts | Business Visa & Immigration Consulting",
     description:
       "Expert India visa and immigration consulting. Business Visa, Employment Visa, FRRO Registration, and compliance services.",
     // twitter:image falls back to the generated opengraph-image

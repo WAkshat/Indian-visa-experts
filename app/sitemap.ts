@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { blogPosts } from "@/data/blog-posts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://indiavisaadvisory.com";
+  const baseUrl = "https://indiavisaexperts.com";
 
   const staticPages = [
     { url: baseUrl, priority: 1.0 },

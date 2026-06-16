@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Disclaimer | India Visa Advisory",
-  description: "Important disclaimer — India Visa Advisory is an independent consulting service, not affiliated with the Government of India.",
+  title: "Disclaimer | India Visa Experts",
+  description: "Important disclaimer — India Visa Experts is an independent consulting service, not affiliated with the Government of India.",
   alternates: { canonical: "/disclaimer" },
 };
 
@@ -24,7 +24,7 @@ export default function DisclaimerPage() {
                 Independent Service — Not a Government Agency
               </h2>
               <p className="text-amber-700 leading-relaxed">
-                India Visa Advisory is an independent private consulting service. We are NOT affiliated
+                India Visa Experts is an independent private consulting service. We are NOT affiliated
                 with the Government of India, Ministry of External Affairs (MEA), Foreigners Regional
                 Registration Office (FRRO), Indian Consulates, or any other government entity or agency.
                 We do not represent any government body.
@@ -38,7 +38,7 @@ export default function DisclaimerPage() {
               <p className="leading-relaxed">
                 All visa, immigration, and registration decisions are made solely and exclusively by the
                 relevant government authorities — including Indian Consulates, Embassies, and the FRRO.
-                India Visa Advisory does not make or influence these decisions. We provide guidance and
+                India Visa Experts does not make or influence these decisions. We provide guidance and
                 preparation assistance only.
               </p>
             </div>
@@ -62,8 +62,7 @@ export default function DisclaimerPage() {
               </h2>
               <p className="leading-relaxed">
                 The information provided on this website and through our services is for general
-                informational and guidance purposes only. It does not constitute legal advice. India
-                Visa Advisory is not a law firm and our consultants are not lawyers. For legal advice,
+                informational and guidance purposes only. It does not constitute legal advice. India Visa Experts is not a law firm and our consultants are not lawyers. For legal advice,
                 please consult a qualified lawyer specializing in Indian immigration law.
               </p>
             </div>
@@ -86,8 +85,8 @@ export default function DisclaimerPage() {
               </h2>
               <p className="leading-relaxed">
                 If you have any questions about this disclaimer, please contact us at{" "}
-                <a href="mailto:info@indiavisaadvisory.com" className="text-navy-700 underline">
-                  info@indiavisaadvisory.com
+                <a href="mailto:info@indiavisaexperts.com" className="text-navy-700 underline">
+                  info@indiavisaexperts.com
                 </a>
                 .
               </p>

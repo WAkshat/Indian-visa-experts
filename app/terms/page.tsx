@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions | India Visa Advisory",
-  description: "Terms and Conditions for India Visa Advisory immigration consulting services.",
+  title: "Terms & Conditions | India Visa Experts",
+  description: "Terms and Conditions for India Visa Experts immigration consulting services.",
   alternates: { canonical: "/terms" },
 };
 
@@ -22,7 +22,7 @@ export default function TermsPage() {
             <div>
               <h2 className="font-display text-2xl font-bold text-navy-900 mb-3">1. Nature of Services</h2>
               <p className="leading-relaxed">
-                India Visa Advisory is an independent private consulting firm providing visa and
+                India Visa Experts is an independent private consulting firm providing visa and
                 immigration advisory services. We are NOT a government agency, law firm, or official
                 representative of any government authority. We do not guarantee visa approvals, as all
                 decisions rest solely with the relevant government authorities.
@@ -64,7 +64,7 @@ export default function TermsPage() {
             <div>
               <h2 className="font-display text-2xl font-bold text-navy-900 mb-3">5. Limitation of Liability</h2>
               <p className="leading-relaxed">
-                India Visa Advisory shall not be liable for any damages arising from visa rejection,
+                India Visa Experts shall not be liable for any damages arising from visa rejection,
                 delays, changes in government regulations, errors in information provided by clients,
                 or any other circumstances beyond our reasonable control. Our liability is limited to
                 the fees paid for the specific service.

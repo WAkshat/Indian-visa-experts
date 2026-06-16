@@ -107,7 +107,7 @@ export const services: ServiceDetail[] = [
           "Processing time varies by nationality and consulate. Typically, it ranges from 3 to 15 business days. We recommend applying at least 4 weeks before your intended travel date to allow adequate time for processing and any additional document requests.",
       },
     ],
-    metaTitle: "India Business Visa Consultant | Expert Guidance | India Visa Advisory",
+    metaTitle: "India Business Visa Consultant | Expert Guidance | India Visa Experts",
     metaDescription:
       "Professional assistance for Indian Business Visa applications. Expert guidance on eligibility, documents, and process. Trusted India visa consultants for foreign nationals and companies.",
     keywords: [
@@ -208,7 +208,7 @@ export const services: ServiceDetail[] = [
           "An Employment Visa is employer-specific. Changing employers requires applying for a new Employment Visa with the new employer. Working for a different employer than the one specified in your visa without proper authorization is a violation of visa conditions.",
       },
     ],
-    metaTitle: "Employment Visa India | Work Permit Assistance | India Visa Advisory",
+    metaTitle: "Employment Visa India | Work Permit Assistance | India Visa Experts",
     metaDescription:
       "Expert assistance for Employment Visa India applications. We guide foreign nationals and Indian employers through the complete process. Compliance-focused immigration consulting.",
     keywords: [
@@ -307,7 +307,7 @@ export const services: ServiceDetail[] = [
           "Yes. X Visa holders, like most other long-stay visa holders, are required to register with the FRRO/FRO within 14 days of arrival in India if their intended stay exceeds 180 days.",
       },
     ],
-    metaTitle: "X Visa India | Dependent Visa for Spouses & Family | India Visa Advisory",
+    metaTitle: "X Visa India | Dependent Visa for Spouses & Family | India Visa Experts",
     metaDescription:
       "Expert guidance for X Visa (Dependent Visa) applications in India. Assistance for spouses and dependents of foreign nationals working in India. Professional immigration consulting.",
     keywords: [
@@ -409,7 +409,7 @@ export const services: ServiceDetail[] = [
           "FRRO Residential Permits are generally co-terminus with your visa validity. When you renew your visa or extend your stay, your FRRO registration must be updated accordingly. We track renewal deadlines for our clients to ensure continuous compliance.",
       },
     ],
-    metaTitle: "FRRO Registration India | Foreign Nationals Compliance | India Visa Advisory",
+    metaTitle: "FRRO Registration India | Foreign Nationals Compliance | India Visa Experts",
     metaDescription:
       "Expert FRRO registration assistance for foreign nationals in India. Initial registration, renewals, exit permits and compliance guidance. Avoid penalties with professional support.",
     keywords: [
@@ -510,7 +510,7 @@ export const services: ServiceDetail[] = [
           "Overstaying is a serious violation. Consequences include fines, detention, deportation, and a ban on re-entry to India. If you are at risk of overstaying, contact us immediately so we can help you regularize your status.",
       },
     ],
-    metaTitle: "Visa Extension India | FRRO Visa Extension Consultant | India Visa Advisory",
+    metaTitle: "Visa Extension India | FRRO Visa Extension Consultant | India Visa Experts",
     metaDescription:
       "Professional visa extension assistance for foreign nationals in India. We handle FRRO applications, documentation, and compliance to extend your authorized stay in India.",
     keywords: [
@@ -609,7 +609,7 @@ export const services: ServiceDetail[] = [
           "OCI provides long-term, FRRO-exempt residency. An Entry/X Visa is typically for shorter-term visits or while an OCI application is pending. For spouses of Indian citizens, OCI is the preferred long-term solution. We advise on which option suits your situation.",
       },
     ],
-    metaTitle: "OCI Card India | Entry Visa Services | India Visa Advisory",
+    metaTitle: "OCI Card India | Entry Visa Services | India Visa Experts",
     metaDescription:
       "Expert OCI card application assistance and Entry Visa services for persons of Indian origin and spouses of Indian citizens. Professional immigration guidance for the Indian diaspora.",
     keywords: [
@@ -706,7 +706,7 @@ export const services: ServiceDetail[] = [
           "Key obligations include obtaining the correct visa, registering with the FRRO within 14 days of arrival, reporting to the employer's registered HR, complying with visa conditions, and maintaining up-to-date residential permits. The employer also has reporting obligations to the FRRO.",
       },
     ],
-    metaTitle: "Foreign Company India Advisory | Immigration Compliance | India Visa Advisory",
+    metaTitle: "Foreign Company India Advisory | Immigration Compliance | India Visa Experts",
     metaDescription:
       "Strategic immigration and compliance advisory for foreign companies operating in India. Visa management, FRRO registration, and ongoing compliance support for HR teams.",
     keywords: [

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | India Visa Advisory",
-  description: "Privacy Policy of India Visa Advisory — independent immigration consulting service.",
+  title: "Privacy Policy | India Visa Experts",
+  description: "Privacy Policy of India Visa Experts — independent immigration consulting service.",
   alternates: { canonical: "/privacy-policy" },
 };
 
@@ -22,7 +22,7 @@ export default function PrivacyPolicyPage() {
             <div>
               <h2 className="font-display text-2xl font-bold text-navy-900 mb-3">1. Introduction</h2>
               <p className="leading-relaxed">
-                India Visa Advisory (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your
+                India Visa Experts (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your
                 personal information. This Privacy Policy explains how we collect, use, and safeguard
                 your information when you visit our website or use our consulting services.
               </p>
@@ -94,8 +94,8 @@ export default function PrivacyPolicyPage() {
               <h2 className="font-display text-2xl font-bold text-navy-900 mb-3">8. Contact Us</h2>
               <p className="leading-relaxed">
                 For privacy-related queries, contact us at:{" "}
-                <a href="mailto:privacy@indiavisaadvisory.com" className="text-navy-700 underline">
-                  privacy@indiavisaadvisory.com
+                <a href="mailto:privacy@indiavisaexperts.com" className="text-navy-700 underline">
+                  privacy@indiavisaexperts.com
                 </a>
               </p>
             </div>

@@ -1,4 +1,4 @@
-# India Visa Advisory — Website
+# India Visa Experts — Website
 
 A premium Next.js 15 website for India immigration and visa consulting.
 
@@ -95,7 +95,7 @@ Update in these files:
 Replace placeholders:
 - Phone: `+91 123 456 7890`
 - WhatsApp: `+91 987 654 3210`
-- Email: `info@indiavisaadvisory.com`
+- Email: `info@indiavisaexperts.com`
 
 ### WhatsApp Integration
 Update `components/widgets/WhatsAppButton.tsx`:
@@ -104,7 +104,7 @@ const phoneNumber = "91YOUR_NUMBER_HERE"; // without + sign
 ```
 
 ### Company Name
-Replace `India Visa Advisory` throughout with your actual company name.
+Replace `India Visa Experts` throughout with your actual company name.
 
 ## SEO Setup
 
@@ -126,12 +126,12 @@ Add to `data/blog-posts.ts`:
   content: `## Your content here...`,
   category: "Business Visa",
   tags: ["Business Visa", "India"],
-  author: "India Visa Advisory Team",
+  author: "India Visa Experts Team",
   authorTitle: "Immigration Specialists",
   publishedAt: "2024-06-01",
   readTime: 8,
   featured: false,
-  metaTitle: "SEO Title | India Visa Advisory",
+  metaTitle: "SEO Title | India Visa Experts",
   metaDescription: "SEO description",
   keywords: ["keyword1", "keyword2"],
   relatedSlugs: ["related-slug-1"],

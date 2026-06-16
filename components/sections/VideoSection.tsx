@@ -36,7 +36,7 @@ export default function VideoSection() {
               Expert Guidance, Explained Clearly
             </h2>
             <p className="text-white/65 leading-relaxed mb-6">
-              Watch how India Visa Advisory helps foreign nationals and companies navigate
+              Watch how India Visa Experts helps foreign nationals and companies navigate
               visa applications, FRRO registration, and ongoing compliance — with transparency
               at every step.
             </p>
@@ -71,7 +71,7 @@ export default function VideoSection() {
               <motion.div variants={fadeUp} transition={defaultTransition}>
                 <YouTubeEmbed
                   videoId={consultationVideoId}
-                  title="India Visa Advisory consultation overview"
+                  title="India Visa Experts consultation overview"
                 />
               </motion.div>
             ) : (
@@ -82,7 +82,7 @@ export default function VideoSection() {
               >
                 <Image
                   src={media.consultation.image}
-                  alt="India Visa Advisory consultant explaining the visa process to a client"
+                  alt="India Visa Experts consultant explaining the visa process to a client"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover transition-transform duration-700 ease-out-expo group-hover:scale-105"

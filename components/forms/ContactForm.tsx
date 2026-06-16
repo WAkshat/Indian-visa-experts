@@ -196,7 +196,7 @@ export default function ContactForm() {
 
       {/* Disclaimer */}
       <p className="text-xs text-gray-400 leading-relaxed">
-        By submitting this form, you consent to being contacted by India Visa Advisory regarding your
+        By submitting this form, you consent to being contacted by India Visa Experts regarding your
         inquiry. We are an independent consulting firm and are not affiliated with any government agency.
       </p>
 
