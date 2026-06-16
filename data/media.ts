@@ -42,11 +42,14 @@ export const media = {
       "frro-registration-india":
         "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=600&q=80",
       "visa-extension-india":
-        "https://images.unsplash.com/photo-1506784365857-b05d25baf0de?auto=format&fit=crop&w=600&q=80",
+        "https://images.unsplash.com/photo-1569154941061-e231b4725ef1?auto=format&fit=crop&w=600&q=80",
       "oci-services-india":
-        "https://images.unsplash.com/photo-1524492412937-28c67d457722?auto=format&fit=crop&w=600&q=80",
+        "https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=600&q=80",
       "foreign-company-india-advisory":
         "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80",
+      // Document Review card (its service slug is "contact").
+      "contact":
+        "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=600&q=80",
     } as Record<string, string>,
   },
 } as const;
