@@ -15,12 +15,9 @@ export const contact = {
     region: "Haryana",
     country: "IN",
   },
-  // NOTE: replace these with the real profile URLs when available — they
-  // currently point to the platform home pages, not the business accounts.
+  // LinkedIn is the only active social profile.
   social: {
-    linkedin: "https://linkedin.com",
-    facebook: "https://facebook.com",
-    twitter: "https://twitter.com",
+    linkedin: "https://www.linkedin.com/company/india-visa-experts/about/",
   },
 } as const;
 

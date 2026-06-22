@@ -36,11 +36,7 @@ export function organizationSchema() {
       addressCountry: contact.address.country,
     },
     areaServed: { "@type": "Country", name: "India" },
-    sameAs: [
-      contact.social.linkedin,
-      contact.social.facebook,
-      contact.social.twitter,
-    ],
+    sameAs: [contact.social.linkedin],
     serviceType: [
       "Business Visa Consulting",
       "Employment Visa Consulting",

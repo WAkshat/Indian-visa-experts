@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Phone, Mail, MapPin, Clock, MessageCircle, Linkedin, Facebook } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, MessageCircle, Linkedin } from "lucide-react";
 import ContactForm from "@/components/forms/ContactForm";
 import NewsletterForm from "@/components/forms/NewsletterForm";
 import { contact, whatsappLink } from "@/data/contact";
@@ -134,15 +134,6 @@ export default function ContactPage() {
                     aria-label="LinkedIn"
                   >
                     <Linkedin className="w-4 h-4" />
-                  </a>
-                  <a
-                    href={contact.social.facebook}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center hover:bg-gold-500 hover:text-navy-900 transition-all"
-                    aria-label="Facebook"
-                  >
-                    <Facebook className="w-4 h-4" />
                   </a>
                   <a
                     href={whatsappLink()}

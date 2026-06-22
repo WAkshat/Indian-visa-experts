@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Linkedin, Facebook, Twitter, Phone, Mail, MapPin } from "lucide-react";
+import { Linkedin, Phone, Mail, MapPin } from "lucide-react";
 import { contact } from "@/data/contact";
 import NewsletterForm from "@/components/forms/NewsletterForm";
 
@@ -34,8 +34,6 @@ const footerResources = [
 
 const socialLinks = [
   { icon: Linkedin, href: contact.social.linkedin, label: "LinkedIn" },
-  { icon: Facebook, href: contact.social.facebook, label: "Facebook" },
-  { icon: Twitter, href: contact.social.twitter, label: "X (Twitter)" },
 ];
 
 export default function Footer() {
