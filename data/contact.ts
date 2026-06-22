@@ -17,7 +17,7 @@ export const contact = {
   },
   // LinkedIn is the only active social profile.
   social: {
-    linkedin: "https://www.linkedin.com/company/india-visa-experts/about/",
+    linkedin: "https://www.linkedin.com/company/india-visa-experts/?viewAsMember=true",
   },
 } as const;
 
