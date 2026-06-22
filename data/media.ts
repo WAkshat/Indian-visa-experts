@@ -53,6 +53,8 @@ export const media = {
       // Document Review card (its service slug is "contact").
       "contact":
         "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=600&q=80",
+      "medical-visa-india":
+        "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=600&q=80",
     } as Record<string, string>,
   },
 } as const;

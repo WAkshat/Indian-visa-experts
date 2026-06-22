@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/visa-extension-india`, priority: 0.9 },
     { url: `${baseUrl}/oci-services-india`, priority: 0.9 },
     { url: `${baseUrl}/foreign-company-india-advisory`, priority: 0.9 },
+    { url: `${baseUrl}/medical-visa-india`, priority: 0.9 },
     { url: `${baseUrl}/privacy-policy`, priority: 0.3 },
     { url: `${baseUrl}/terms`, priority: 0.3 },
     { url: `${baseUrl}/disclaimer`, priority: 0.4 },

@@ -717,6 +717,111 @@ export const services: ServiceDetail[] = [
       "foreign employee India visa",
     ],
   },
+  {
+    slug: "medical-visa-india",
+    title: "Medical Visa for India",
+    shortTitle: "Medical Tourism",
+    tagline: "Treatment Travel — Handled End to End",
+    description:
+      "Complete assistance with the e-Medical Visa, Medical Attendant Visa, AYUSH Visa, hospital invitation letters, FRRO registration, and on-treatment extensions for international patients and their families.",
+    icon: "Stethoscope",
+    overview:
+      "India is one of the world's leading medical tourism destinations, treating over 600,000 international patients each year at NABH- and JCI-accredited hospitals for 30–70% less than many Western countries. The Medical Visa (M-Visa) is granted to foreign nationals whose sole purpose of travel is treatment at a recognised or accredited Indian hospital. It exists in three forms: the e-Medical Visa for patients, the Medical Attendant Visa for accompanying family, and the AYUSH Visa for traditional treatment such as Ayurveda and Yoga. The detail most patients miss is duration: the e-Medical Visa is valid for 60 days from first arrival with triple entry — not the \"one year\" often quoted, which actually refers to the regular paper Medical Visa issued through an embassy, a separate channel with heavier documentation. We help you choose the correct visa for your treatment timeline, prepare the stamped hospital invitation letter and supporting medical records, file accurately to avoid rejection, and manage FRRO registration and any e-FRRO extension if recovery runs long.",
+    eligibility: [
+      "e-Medical Visa — for the patient travelling for treatment at a recognised or accredited Indian hospital",
+      "Medical Attendant Visa (MED X) — up to two close blood relatives accompanying the patient",
+      "AYUSH Visa — for Ayurveda, Yoga, Naturopathy, Unani, Siddha, or Homeopathy treatment",
+      "Patients seeking cardiac care, oncology, organ transplants, orthopedics (knee/hip replacement), or neurosurgery",
+      "Follow-up patients returning for review at the same Indian hospital",
+      "Note: surrogacy is excluded from this category, and tourist-to-medical visa conversion is generally not permitted",
+    ],
+    documents: [
+      "Passport valid 6+ months with at least two blank pages",
+      "Recent front-facing photograph with a white background",
+      "Stamped invitation letter on hospital letterhead, stating treatment type and start/end dates",
+      "Prior diagnostic and medical reports (CT / MRI / X-ray, as applicable)",
+      "Proof of funds — certified 3-month bank statement or sponsor affidavit",
+      "Discharge summary or previous medical papers (for follow-up treatment)",
+      "Attendant's proof of relationship to the patient (for the Medical Attendant Visa)",
+      "Travel itinerary covering arrival and treatment dates",
+    ],
+    process: [
+      {
+        step: 1,
+        title: "Visa & Timeline Assessment",
+        description:
+          "We confirm whether the e-Medical or regular Medical Visa fits your treatment length, and map the 60-day limit against your recovery plan.",
+      },
+      {
+        step: 2,
+        title: "Hospital Letter & Documents",
+        description:
+          "We coordinate the stamped hospital invitation letter and review your medical records and proof of funds before submission.",
+      },
+      {
+        step: 3,
+        title: "Online Application Filing",
+        description:
+          "We prepare and file the e-Medical and Medical Attendant applications accurately on the official portal to avoid rejection.",
+      },
+      {
+        step: 4,
+        title: "Arrival & FRRO Registration",
+        description:
+          "We handle the e-Arrival Card and FRRO registration, including the tighter deadlines that apply to some nationalities.",
+      },
+      {
+        step: 5,
+        title: "Extensions & Compliance",
+        description:
+          "If recovery runs past 60 days, we manage the e-FRRO extension with a fresh hospital certificate and keep you compliant.",
+      },
+    ],
+    faqs: [
+      {
+        question: "How long is the e-Medical Visa valid?",
+        answer:
+          "The e-Medical Visa is valid for 60 days from your first arrival in India, with triple entry. If your treatment needs longer, the regular paper Medical Visa or an e-FRRO extension is the route — we assess which applies to your case before you apply.",
+      },
+      {
+        question: "Can my family travel with me?",
+        answer:
+          "Yes. Up to two close blood relatives can accompany you on Medical Attendant Visas (MED X), issued in line with your Medical Visa. We file these together with the patient's application.",
+      },
+      {
+        question: "Do I need to register with the FRRO after arrival?",
+        answer:
+          "It depends on your nationality and stay length. Most nationals register within 14 days if the visa exceeds 180 days, but some nationalities must register within 24 hours of arrival. We confirm your specific deadline and handle the filing.",
+      },
+      {
+        question: "What happens if my treatment takes longer than the visa allows?",
+        answer:
+          "You can apply for an extension of up to one year through the e-FRRO portal, supported by a fresh certificate from your treating hospital justifying continued stay. The process is online, and we manage it for you.",
+      },
+      {
+        question: "Can I convert a tourist visa to a medical visa after arriving?",
+        answer:
+          "Generally no — visa conversion is not permitted. For a sudden illness or emergency, a Medical Permit via the FRRO may be possible. We advise on the correct route before you travel to avoid this situation.",
+      },
+      {
+        question: "How early should I apply?",
+        answer:
+          "Apply at least four days before arrival, within a 120-day window. e-Medical Visas are often processed within 72 hours, but we recommend starting early so visa timing aligns with your hospital admission date.",
+      },
+    ],
+    metaTitle: "Medical Visa India | e-Medical Visa & Treatment Travel | India Visa Experts",
+    metaDescription:
+      "Expert help with the India e-Medical Visa, Medical Attendant Visa, and AYUSH Visa — hospital invitation letters, FRRO registration, and treatment extensions for international patients.",
+    keywords: [
+      "India Medical Visa",
+      "e-Medical Visa India",
+      "medical tourism India",
+      "Medical Attendant Visa India",
+      "AYUSH visa India",
+      "India treatment travel",
+      "medical visa for India",
+    ],
+  },
 ];
 
 export const serviceCards = [

@@ -12,6 +12,7 @@ import {
   Globe,
   Building2,
   FileCheck,
+  Stethoscope,
   ArrowRight,
 } from "lucide-react";
 import AnimatedSection from "@/components/media/AnimatedSection";
@@ -27,6 +28,7 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Globe,
   Building2,
   FileCheck,
+  Stethoscope,
 };
 
 const services = [
@@ -93,6 +95,14 @@ const services = [
       "Professional review of all visa and immigration documents before submission to minimize rejection risk.",
     icon: "FileCheck",
     color: "from-indigo-500 to-indigo-600",
+  },
+  {
+    slug: "medical-visa-india",
+    title: "Medical Tourism",
+    description:
+      "e-Medical, Medical Attendant, and AYUSH visa support for international patients seeking treatment at India's accredited hospitals.",
+    icon: "Stethoscope",
+    color: "from-red-500 to-rose-600",
   },
 ];
 

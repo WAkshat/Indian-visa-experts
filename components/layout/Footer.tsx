@@ -13,6 +13,7 @@ const footerServices = [
   { label: "Visa Extension", href: "/visa-extension-india" },
   { label: "OCI & Entry Visa", href: "/oci-services-india" },
   { label: "Foreign Company Advisory", href: "/foreign-company-india-advisory" },
+  { label: "Medical Tourism", href: "/medical-visa-india" },
 ];
 
 const footerBlog = [
