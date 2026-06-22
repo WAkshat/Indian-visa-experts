@@ -13,7 +13,7 @@ Centralized into a single source of truth — **`data/contact.ts`** — and prop
 |---|---|
 | Phone | `+91 98183 85663` (tel: `+919818385663`) |
 | WhatsApp | `919818385663` (with pre-filled chat message) |
-| Email | `consult.us@indiavisaexperts.com` |
+| Email | `indiavisa.consult@gmail.com` |
 | Address | Urban Square by Pioneer Urban, Golf Course Extension Road, Gurgaon |
 
 > Note: corrected the typo "Golf coure extension road" → "Golf Course Extension Road", and added "Haryana" as the region in the JSON-LD address schema. No postal code was provided, so it was omitted rather than guessed.
@@ -43,7 +43,7 @@ Verified in the production build: the new phone/email/WhatsApp/address appear ac
 ## 3. Changes MADE (implemented)
 
 ### Forms made functional (no backend required — via `mailto:`)
-- **Contact form** (`components/forms/ContactForm.tsx`) — on submit, builds a fully-formatted email (name, email, nationality, phone, service, message) and opens the visitor's mail app pre-addressed to `consult.us@indiavisaexperts.com`. Success state updated to reflect this and to show the direct email as a fallback.
+- **Contact form** (`components/forms/ContactForm.tsx`) — on submit, builds a fully-formatted email (name, email, nationality, phone, service, message) and opens the visitor's mail app pre-addressed to `indiavisa.consult@gmail.com`. Success state updated to reflect this and to show the direct email as a fallback.
 - **Reusable `NewsletterForm`** (`components/forms/NewsletterForm.tsx`, new) — client component with email validation, `mailto:` submission, and a success state. Styling and copy are passed per call site.
 - **Footer newsletter** — now uses `NewsletterForm` (dark theme).
 - **Blog newsletter** — now uses `NewsletterForm`.
