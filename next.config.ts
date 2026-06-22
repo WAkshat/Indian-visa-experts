@@ -1,7 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Pure static export — no server/Worker at runtime. Served as files on
+  // Cloudflare's CDN (no CPU limits, no cold starts, instant TTFB).
+  output: "export",
   images: {
+    // Required for static export: no on-the-fly image optimization.
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
@@ -12,8 +17,3 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
-
-// Enables the Cloudflare bindings (env, assets, etc.) during `next dev`.
-// No-op in production builds.
-import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
-initOpenNextCloudflareForDev();

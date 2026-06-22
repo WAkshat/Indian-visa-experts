@@ -1,6 +1,9 @@
 import type { MetadataRoute } from "next";
 import { blogPosts } from "@/data/blog-posts";
 
+// Required for `output: export` — generate this once at build time.
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://indiavisaexperts.com";
 

@@ -4,6 +4,9 @@ export const alt = "India Visa Experts — Business Visa & Immigration Consultin
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
+// Required for `output: export` — render this image once at build time.
+export const dynamic = "force-static";
+
 // Dynamically generated, on-brand social share image (replaces the missing /og-image.jpg).
 export default function OpengraphImage() {
   return new ImageResponse(
