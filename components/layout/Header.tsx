@@ -183,6 +183,8 @@ export default function Header() {
           {/* Mobile menu button */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
+            aria-expanded={mobileOpen}
             className={cn(
               "lg:hidden p-2 rounded-lg transition-colors",
               isScrolled ? "text-navy-700 hover:bg-navy-50" : "text-white hover:bg-white/10"

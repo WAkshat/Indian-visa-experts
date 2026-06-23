@@ -38,7 +38,7 @@ function FeaturedCard({ post, index }: { post: BlogPost; index: number }) {
             <Tag className="w-3 h-3" />
             {post.category}
           </span>
-          <span className="flex items-center gap-1 text-xs text-gray-400">
+          <span className="flex items-center gap-1 text-xs text-gray-500">
             <Clock className="w-3 h-3" />
             {post.readTime} min
           </span>
@@ -48,7 +48,7 @@ function FeaturedCard({ post, index }: { post: BlogPost; index: number }) {
         </h3>
         <p className="text-gray-500 text-sm line-clamp-2 mb-4">{post.excerpt}</p>
         <div className="flex items-center justify-between">
-          <span className="text-xs text-gray-400">{formatDate(post.publishedAt)}</span>
+          <span className="text-xs text-gray-500">{formatDate(post.publishedAt)}</span>
           <span className="inline-flex items-center gap-1 text-sm font-semibold text-navy-700 group-hover:text-gold-600">
             Read
             <ArrowRight className="w-3.5 h-3.5" />
@@ -79,7 +79,7 @@ function CompactCard({ post, index }: { post: BlogPost; index: number }) {
         <h3 className="font-semibold text-navy-900 text-sm leading-snug mb-2 line-clamp-2 group-hover:text-navy-700">
           {post.title}
         </h3>
-        <div className="flex items-center justify-between text-xs text-gray-400">
+        <div className="flex items-center justify-between text-xs text-gray-500">
           <span>{formatDate(post.publishedAt)}</span>
           <span>{post.readTime} min read</span>
         </div>

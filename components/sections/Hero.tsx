@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import {
   motion,
   useScroll,
@@ -10,12 +11,16 @@ import {
 } from "framer-motion";
 import { ArrowRight, Shield, Clock, Award } from "lucide-react";
 import VideoBackground from "@/components/media/VideoBackground";
-import LottieAnimation from "@/components/media/LottieAnimation";
 import AnimatedCounter from "@/components/media/AnimatedCounter";
+
+// Lottie pulls in a sizeable client-only animation library — defer it out of
+// the initial bundle since it's just a small decorative icon, not LCP content.
+const LottieAnimation = dynamic(() => import("@/components/media/LottieAnimation"), {
+  ssr: false,
+});
 import { media } from "@/data/media";
 import {
   fadeUp,
-  blurUp,
   staggerContainer,
   slideInRight,
   defaultTransition,
@@ -37,6 +42,7 @@ const trustBadges = [
 
 export default function Hero() {
   const sectionRef = useRef<HTMLElement>(null);
+  const rectRef = useRef<DOMRect | null>(null);
 
   // Scroll-driven parallax: background drifts down, content lifts and fades.
   const { scrollYProgress } = useScroll({
@@ -51,8 +57,15 @@ export default function Hero() {
   const glowX = useMotionValue(700);
   const glowY = useMotionValue(300);
 
+  // Cache the rect on enter instead of reading it on every mousemove — querying
+  // getBoundingClientRect() on a high-frequency event forces a synchronous
+  // reflow whenever the animations above have invalidated layout.
+  const handleMouseEnter = (e: React.MouseEvent<HTMLElement>) => {
+    rectRef.current = e.currentTarget.getBoundingClientRect();
+  };
+
   const handleMouseMove = (e: React.MouseEvent<HTMLElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
+    const rect = rectRef.current ?? e.currentTarget.getBoundingClientRect();
     glowX.set(e.clientX - rect.left);
     glowY.set(e.clientY - rect.top);
   };
@@ -60,6 +73,7 @@ export default function Hero() {
   return (
     <section
       ref={sectionRef}
+      onMouseEnter={handleMouseEnter}
       onMouseMove={handleMouseMove}
       className="relative min-h-screen flex items-center overflow-hidden grain"
     >
@@ -116,14 +130,10 @@ export default function Hero() {
               Trusted India Immigration Consulting
             </motion.div>
 
-            <motion.h1
-              variants={blurUp}
-              transition={{ ...expoTransition, delay: 0.08 }}
-              className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.08] mb-6 text-balance"
-            >
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.08] mb-6 text-balance">
               Navigate India&apos;s Visa &amp; Immigration Process with{" "}
               <span className="text-gradient-gold-animated">Confidence</span>
-            </motion.h1>
+            </h1>
 
             <motion.p
               variants={fadeUp}
@@ -222,9 +232,9 @@ export default function Hero() {
                   />
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-display font-bold text-navy-900 text-lg mb-1">
+                  <p className="font-display font-bold text-navy-900 text-lg mb-1">
                     Free Business Visa Checklist
-                  </h3>
+                  </p>
                   <p className="text-gray-600 text-sm mb-3">
                     Download our comprehensive document checklist for India Business Visa applications.
                   </p>

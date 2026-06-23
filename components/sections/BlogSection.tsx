@@ -57,7 +57,7 @@ export default function BlogSection() {
                     <Tag className="w-3 h-3" />
                     {post.category}
                   </span>
-                  <span className="flex items-center gap-1 text-xs text-gray-400">
+                  <span className="flex items-center gap-1 text-xs text-gray-500">
                     <Clock className="w-3 h-3" />
                     {post.readTime} min read
                   </span>
@@ -75,7 +75,7 @@ export default function BlogSection() {
 
                 {/* Date & CTA */}
                 <div className="flex items-center justify-between">
-                  <span className="text-xs text-gray-400">{formatDate(post.publishedAt)}</span>
+                  <span className="text-xs text-gray-500">{formatDate(post.publishedAt)}</span>
                   <span className="inline-flex items-center gap-1 text-sm font-semibold text-navy-700 group-hover:text-gold-600 transition-colors">
                     Read More
                     <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
