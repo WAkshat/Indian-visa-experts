@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     template: "%s | India Visa Experts",
   },
   description:
-    "Expert India visa and immigration consulting for foreign nationals, companies, and families. Business Visa, Employment Visa, X Visa, FRRO Registration, and compliance services.",
+    "Expert India visa & immigration consulting for foreign nationals, companies & families: Business Visa, Employment Visa, FRRO Registration & compliance.",
   keywords: [
     "India Business Visa consultant",
     "Employment Visa India",

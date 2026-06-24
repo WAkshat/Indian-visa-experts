@@ -12,9 +12,9 @@ import { faqSchema } from "@/lib/seo";
 import { faqs } from "@/data/faqs";
 
 export const metadata: Metadata = {
-  title: "India Visa Experts | Your Trusted Partner for Business Mobility and Immigration in India",
+  title: "India Visa Experts | Business & Employment Visa Consulting",
   description:
-    "Expert India visa and immigration consulting. Business Visa, Employment Visa, X Visa, FRRO Registration, and compliance services for foreign nationals and companies.",
+    "Expert India visa & immigration consulting: Business Visa, Employment Visa, X Visa, FRRO Registration and compliance for foreign nationals & companies.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "India Visa Experts | Business Visa & Immigration Consulting India",
