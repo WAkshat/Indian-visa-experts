@@ -5,11 +5,18 @@ import { useEffect, useRef, useState } from "react";
 interface VideoBackgroundProps {
   src: string;
   webmSrc?: string;
-  /** Still frame shown instantly; also the permanent backdrop for reduced-motion. */
+  /** Full still frame; loaded at low priority and the backdrop for reduced-motion. */
   poster?: string;
   overlayOpacity?: number;
   className?: string;
 }
+
+// Inlined ~380-byte blurred first frame of the hero video. Paints instantly with
+// the HTML (zero network) so the Taj Mahal is visible immediately — but as a CSS
+// background it never competes with the render-critical CSS for bandwidth, so it
+// can't delay FCP/LCP the way a high-priority poster preload did.
+const LQIP =
+  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD//gAQTGF2YzYwLjMxLjEwMgD/2wBDAAgSEhUSFRgYGBgYGB0bHR4eHh0dHR0eHh4gICAmJiYgICAeHiAgJCQmJikqKScnJicqKi0tLTY2MzM/P0FNTV3/xABvAAACAwEAAAAAAAAAAAAAAAAFAwIEBgcBAQEBAQAAAAAAAAAAAAAAAAMFAgQQAAEDAgMHBQEBAAAAAAAAAAECABESAzFRQULRkpEyYSGhcTMiE/BTEQEBAAMBAQEAAAAAAAAAAAABABEDAkGREv/AABEIABIAIAMBIgACEQADEQD/2gAMAwEAAhEDEQA/AOg2VE20SZNIk5+G4qT5lUerzyLv1A7ANSiqlZSSFEpE0iYjzhi+Xvahg+y86xcsaqChIdBfYgZzk0K0IkkUyYxxcAVE68mhuXl8YnSfo9LLfosbSuZY+9euU9a+I73ZY290udVoUb96fkua7St7Wq9d/wBF8Rz92g483BWH9m1sX//Z";
 
 export default function VideoBackground({
   src,
@@ -21,6 +28,7 @@ export default function VideoBackground({
   const videoRef = useRef<HTMLVideoElement>(null);
   const [useVideo, setUseVideo] = useState(true);
   const [videoReady, setVideoReady] = useState(false);
+  const [posterLoaded, setPosterLoaded] = useState(false);
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
 
   useEffect(() => {
@@ -51,21 +59,27 @@ export default function VideoBackground({
 
   return (
     <div className={`absolute inset-0 overflow-hidden bg-navy-950 ${className}`} aria-hidden="true">
-      {/* Instant still frame — paints immediately so the hero is never empty
-          while the video streams in. The video crossfades over it once playing,
-          and it stays as the backdrop for reduced-motion users or if video fails. */}
-      {poster ? (
+      {/* Instant blurred still — inline, paints with the HTML, no empty hero. */}
+      <div
+        className="absolute inset-0 scale-110 bg-cover bg-center blur-xl"
+        style={{ backgroundImage: `url("${LQIP}")` }}
+      />
+
+      {/* Full-resolution still — low priority so it yields to critical CSS/JS,
+          then fades in over the blur. Also the backdrop for reduced-motion. */}
+      {poster && (
         // eslint-disable-next-line @next/next/no-img-element
         <img
           src={poster}
           alt=""
-          fetchPriority="high"
+          fetchPriority="low"
           loading="eager"
           decoding="async"
-          className="absolute inset-0 w-full h-full object-cover"
+          onLoad={() => setPosterLoaded(true)}
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
+            posterLoaded ? "opacity-100" : "opacity-0"
+          }`}
         />
-      ) : (
-        <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-950 to-black" />
       )}
 
       {showVideo && (
