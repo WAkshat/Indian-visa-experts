@@ -83,7 +83,7 @@ export default function OpengraphImage() {
           }}
         >
           <div style={{ fontSize: "22px", color: "#fbbf24", fontWeight: 600 }}>
-            indiavisaexperts.com
+            www.indiavisaexperts.com
           </div>
           <div style={{ fontSize: "18px", color: "rgba(255,255,255,0.4)" }}>
             Independent service · Not a government agency

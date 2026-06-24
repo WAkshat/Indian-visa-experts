@@ -5,7 +5,7 @@ import { blogPosts } from "@/data/blog-posts";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://indiavisaexperts.com";
+  const baseUrl = "https://www.indiavisaexperts.com";
 
   const staticPages = [
     { url: baseUrl, priority: 1.0 },

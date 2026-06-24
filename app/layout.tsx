@@ -23,7 +23,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://indiavisaexperts.com"),
+  metadataBase: new URL("https://www.indiavisaexperts.com"),
   title: {
     default: "India Visa Experts | Business Visa, Employment Visa & Immigration Consulting",
     template: "%s | India Visa Experts",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://indiavisaexperts.com",
+    url: "https://www.indiavisaexperts.com",
     siteName: "India Visa Experts",
     title: "India Visa Experts | Business Visa & Immigration Consulting",
     description:

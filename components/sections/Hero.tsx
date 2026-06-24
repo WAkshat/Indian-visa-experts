@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import {
@@ -44,6 +44,20 @@ export default function Hero() {
   const sectionRef = useRef<HTMLElement>(null);
   const rectRef = useRef<DOMRect | null>(null);
 
+  // The scroll-driven fade/parallax is a desktop-only flourish. On mobile the
+  // hero must render as plain, always-visible content: Google crawls mobile-first
+  // and a scroll-linked opacity can otherwise resolve to 0 in the crawler's
+  // snapshot, blanking the entire hero. Defaults to false so SSR + mobile are safe.
+  const [enableParallax, setEnableParallax] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(min-width: 1024px)");
+    const update = () => setEnableParallax(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
+
   // Scroll-driven parallax: background drifts down, content lifts and fades.
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -77,7 +91,7 @@ export default function Hero() {
       onMouseMove={handleMouseMove}
       className="relative min-h-screen flex items-center overflow-hidden grain"
     >
-      <motion.div style={{ y: bgY }} className="absolute inset-0">
+      <motion.div style={enableParallax ? { y: bgY } : undefined} className="absolute inset-0">
         <VideoBackground
           src={media.hero.video}
           webmSrc={media.hero.videoWebm}
@@ -113,7 +127,7 @@ export default function Hero() {
       </div>
 
       <motion.div
-        style={{ y: contentY, opacity: contentOpacity }}
+        style={enableParallax ? { y: contentY, opacity: contentOpacity } : undefined}
         className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16 w-full"
       >
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -252,12 +266,12 @@ export default function Hero() {
         </div>
       </motion.div>
 
-      {/* Scroll cue */}
+      {/* Scroll cue (desktop only) */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 0.8 }}
-        style={{ opacity: contentOpacity }}
+        style={enableParallax ? { opacity: contentOpacity } : undefined}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden lg:flex flex-col items-center gap-2 text-white/40 text-xs"
       >
         <span className="tracking-wide">Scroll to explore</span>
