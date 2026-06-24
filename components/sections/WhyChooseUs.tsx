@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { Shield, Users, FileCheck, TrendingUp, Zap, HeartHandshake } from "lucide-react";
 import AnimatedSection from "@/components/media/AnimatedSection";
 import { blurUp, staggerContainer, defaultTransition, viewportOnce } from "@/lib/motion";
@@ -61,7 +61,7 @@ export default function WhyChooseUs() {
           </p>
         </AnimatedSection>
 
-        <motion.div
+        <m.div
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
@@ -69,7 +69,7 @@ export default function WhyChooseUs() {
           className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
         >
           {features.map((feature) => (
-            <motion.div
+            <m.div
               key={feature.title}
               variants={blurUp}
               transition={defaultTransition}
@@ -94,9 +94,9 @@ export default function WhyChooseUs() {
               <p className="relative text-gray-600 text-sm leading-relaxed">{feature.description}</p>
 
               <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-gold-400 to-gold-600 rounded-b-2xl scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out-expo origin-left" />
-            </motion.div>
+            </m.div>
           ))}
-        </motion.div>
+        </m.div>
 
         <AnimatedSection delay={0.2} className="mt-16 text-center">
           <div className="inline-flex flex-col sm:flex-row items-center gap-6 bg-navy-50 rounded-2xl px-8 py-6">

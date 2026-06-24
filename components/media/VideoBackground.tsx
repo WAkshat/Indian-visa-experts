@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 interface VideoBackgroundProps {
   src: string;
   webmSrc?: string;
-  /** Accepted for compatibility; a brand gradient is shown until the video plays. */
+  /** Still frame shown instantly; also the permanent backdrop for reduced-motion. */
   poster?: string;
   overlayOpacity?: number;
   className?: string;
@@ -14,6 +14,7 @@ interface VideoBackgroundProps {
 export default function VideoBackground({
   src,
   webmSrc,
+  poster,
   overlayOpacity = 0.7,
   className = "",
 }: VideoBackgroundProps) {
@@ -50,9 +51,22 @@ export default function VideoBackground({
 
   return (
     <div className={`absolute inset-0 overflow-hidden bg-navy-950 ${className}`} aria-hidden="true">
-      {/* Brand-colored placeholder shown until the video paints its first frame —
-          avoids flashing a static photo that doesn't match the footage. */}
-      <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-950 to-black" />
+      {/* Instant still frame — paints immediately so the hero is never empty
+          while the video streams in. The video crossfades over it once playing,
+          and it stays as the backdrop for reduced-motion users or if video fails. */}
+      {poster ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={poster}
+          alt=""
+          fetchPriority="high"
+          loading="eager"
+          decoding="async"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+      ) : (
+        <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-950 to-black" />
+      )}
 
       {showVideo && (
         <video

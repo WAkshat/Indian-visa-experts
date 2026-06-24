@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, m } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { faqs, faqCategories, type FAQ } from "@/data/faqs";
@@ -96,7 +96,7 @@ export default function FAQSection({
 
                 <AnimatePresence initial={false}>
                   {isOpen && (
-                    <motion.div
+                    <m.div
                       key="content"
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: "auto", opacity: 1 }}
@@ -107,7 +107,7 @@ export default function FAQSection({
                       <div className="px-6 pb-5 border-t border-gray-50">
                         <p className="text-gray-600 leading-relaxed pt-4 text-sm">{faq.answer}</p>
                       </div>
-                    </motion.div>
+                    </m.div>
                   )}
                 </AnimatePresence>
               </div>

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import YouTubeEmbed from "@/components/media/YouTubeEmbed";
 import AnimatedSection from "@/components/media/AnimatedSection";
 import { media } from "@/data/media";
@@ -61,21 +61,21 @@ export default function VideoSection() {
             </Link>
           </AnimatedSection>
 
-          <motion.div
+          <m.div
             initial="hidden"
             whileInView="visible"
             viewport={viewportOnce}
             variants={staggerContainer}
           >
             {hasYouTube ? (
-              <motion.div variants={fadeUp} transition={defaultTransition}>
+              <m.div variants={fadeUp} transition={defaultTransition}>
                 <YouTubeEmbed
                   videoId={consultationVideoId}
                   title="India Visa Experts consultation overview"
                 />
-              </motion.div>
+              </m.div>
             ) : (
-              <motion.div
+              <m.div
                 variants={fadeUp}
                 transition={defaultTransition}
                 className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-navy-900 ring-1 ring-white/10 group"
@@ -88,9 +88,9 @@ export default function VideoSection() {
                   className="object-cover transition-transform duration-700 ease-out-expo group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-950/55 via-navy-950/10 to-transparent" />
-              </motion.div>
+              </m.div>
             )}
-          </motion.div>
+          </m.div>
         </div>
       </div>
     </section>

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import {
   Briefcase,
   Users,
@@ -123,7 +123,7 @@ export default function ServicesOverview() {
           </p>
         </AnimatedSection>
 
-        <motion.div
+        <m.div
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
@@ -135,7 +135,7 @@ export default function ServicesOverview() {
             const imageSrc = media.unsplash.services[service.slug];
 
             return (
-              <motion.div
+              <m.div
                 key={`${service.slug}-${service.title}`}
                 variants={blurUp}
                 transition={defaultTransition}
@@ -183,10 +183,10 @@ export default function ServicesOverview() {
                     </div>
                   </div>
                 </Link>
-              </motion.div>
+              </m.div>
             );
           })}
-        </motion.div>
+        </m.div>
 
         <AnimatedSection delay={0.15} className="mt-12 text-center">
           <p className="text-sm text-gray-500">

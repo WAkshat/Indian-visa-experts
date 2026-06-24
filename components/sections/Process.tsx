@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useScroll, useSpring } from "framer-motion";
+import { m, useScroll, useSpring } from "framer-motion";
 import AnimatedSection from "@/components/media/AnimatedSection";
 import { slideInLeft, slideInRight, defaultTransition, viewportOnce } from "@/lib/motion";
 
@@ -66,7 +66,7 @@ export default function Process() {
           {/* Track */}
           <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-navy-100 -translate-x-1/2" />
           {/* Animated progress line that draws as you scroll */}
-          <motion.div
+          <m.div
             style={{ scaleY: lineScale }}
             className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-0.5 origin-top bg-gradient-to-b from-gold-400 via-gold-500 to-navy-400 -translate-x-1/2"
           />
@@ -77,7 +77,7 @@ export default function Process() {
               const contentVariant = isEven ? slideInLeft : slideInRight;
 
               return (
-                <motion.div
+                <m.div
                   key={step.number}
                   initial="hidden"
                   whileInView="visible"
@@ -86,7 +86,7 @@ export default function Process() {
                     isEven ? "lg:flex-row" : "lg:flex-row-reverse"
                   } mb-12 lg:mb-16`}
                 >
-                  <motion.div
+                  <m.div
                     variants={contentVariant}
                     transition={{ ...defaultTransition, delay: 0.05 }}
                     className="flex-1 lg:text-right"
@@ -100,9 +100,9 @@ export default function Process() {
                       <h3 className="font-display font-bold text-navy-900 text-xl mb-3">{step.title}</h3>
                       <p className="text-gray-600 leading-relaxed text-sm">{step.description}</p>
                     </div>
-                  </motion.div>
+                  </m.div>
 
-                  <motion.div
+                  <m.div
                     initial={{ opacity: 0, scale: 0.5 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={viewportOnce}
@@ -110,10 +110,10 @@ export default function Process() {
                     className="hidden lg:flex items-center justify-center w-14 h-14 rounded-full bg-navy-900 text-white font-bold text-lg flex-shrink-0 shadow-xl z-10 ring-4 ring-white"
                   >
                     {index + 1}
-                  </motion.div>
+                  </m.div>
 
                   <div className="hidden lg:block flex-1" />
-                </motion.div>
+                </m.div>
               );
             })}
           </div>

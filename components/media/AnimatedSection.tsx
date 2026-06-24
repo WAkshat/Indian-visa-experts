@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, type HTMLMotionProps } from "framer-motion";
+import { m, type HTMLMotionProps } from "framer-motion";
 import { fadeUp, defaultTransition, viewportOnce } from "@/lib/motion";
 
 interface AnimatedSectionProps extends HTMLMotionProps<"div"> {
@@ -16,7 +16,7 @@ export default function AnimatedSection({
   ...props
 }: AnimatedSectionProps) {
   return (
-    <motion.div
+    <m.div
       initial="hidden"
       whileInView="visible"
       viewport={viewportOnce}
@@ -26,6 +26,6 @@ export default function AnimatedSection({
       {...props}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }

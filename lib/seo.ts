@@ -33,6 +33,7 @@ export function organizationSchema() {
       streetAddress: contact.address.street,
       addressLocality: contact.address.locality,
       addressRegion: contact.address.region,
+      postalCode: contact.address.postalCode,
       addressCountry: contact.address.country,
     },
     areaServed: { "@type": "Country", name: "India" },

@@ -81,6 +81,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <head>
+        {/* Preload the hero still so the Taj Mahal paints instantly — no empty
+            hero while the background video streams in. */}
+        <link rel="preload" as="image" href="/images/hero-poster.jpg" fetchPriority="high" />
         {/* Sitewide identity — page-specific canonicals are set per route via metadata.alternates */}
         <JsonLd data={[organizationSchema(), websiteSchema()]} />
       </head>
