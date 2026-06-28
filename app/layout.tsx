@@ -25,6 +25,19 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.indiavisaexperts.com"),
+  // Favicons served from /public. .ico (with sizes="any") covers Google Search
+  // and legacy browsers; the SVG is preferred by modern browsers; the PNGs are
+  // explicit raster fallbacks; apple-touch-icon covers iOS home-screen.
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
+      { url: "/favicon-16x16.png", type: "image/png", sizes: "16x16" },
+      { url: "/favicon-48x48.png", type: "image/png", sizes: "48x48" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+  },
   title: {
     default: "India Visa Experts | Business Visa, Employment Visa & Immigration Consulting",
     template: "%s | India Visa Experts",
