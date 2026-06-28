@@ -3,6 +3,7 @@ import { CheckCircle, FileText, ArrowRight, AlertCircle } from "lucide-react";
 import { type ServiceDetail } from "@/data/services";
 import CTASection from "./CTASection";
 import ContactForm from "../forms/ContactForm";
+import QuoteForm from "../forms/QuoteForm";
 import JsonLd from "../seo/JsonLd";
 import { breadcrumbSchema, serviceSchema, faqSchema } from "@/lib/seo";
 import { whatsappLink } from "@/data/contact";
@@ -72,22 +73,8 @@ export default function ServicePageTemplate({ service }: ServicePageTemplateProp
               </div>
             </div>
 
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
-              <h3 className="font-display font-bold text-white text-lg mb-4">Quick Summary</h3>
-              <ul className="space-y-3">
-                {service.eligibility.slice(0, 4).map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-white/70 text-sm">
-                    <CheckCircle className="w-4 h-4 text-gold-400 flex-shrink-0 mt-0.5" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-4 pt-4 border-t border-white/10">
-                <p className="text-xs text-white/40">
-                  Independent consulting service. Not affiliated with the Government of India.
-                </p>
-              </div>
-            </div>
+            {/* Above-the-fold lead capture for ready-to-hire visitors */}
+            <QuoteForm service={service.shortTitle} />
           </div>
         </div>
       </section>

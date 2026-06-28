@@ -5,6 +5,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import WhatsAppButton from "@/components/widgets/WhatsAppButton";
 import StickyConsultation from "@/components/widgets/StickyConsultation";
+import MobileContactBar from "@/components/widgets/MobileContactBar";
 import ScrollProgress from "@/components/widgets/ScrollProgress";
 import MotionProvider from "@/components/providers/MotionProvider";
 import JsonLd from "@/components/seo/JsonLd";
@@ -90,8 +91,15 @@ export default function RootLayout({
           <Header />
           <main>{children}</main>
           <Footer />
-          <WhatsAppButton />
-          <StickyConsultation />
+          {/* Spacer so the mobile action bar never covers footer content */}
+          <div aria-hidden className="h-16 lg:hidden" />
+          {/* Desktop floating CTAs */}
+          <div className="hidden lg:block">
+            <WhatsAppButton />
+            <StickyConsultation />
+          </div>
+          {/* Mobile persistent one-tap contact bar */}
+          <MobileContactBar />
         </MotionProvider>
       </body>
     </html>
