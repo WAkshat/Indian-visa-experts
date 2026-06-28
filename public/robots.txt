@@ -1,0 +1,12 @@
+# Content usage preferences — Content Signals (https://contentsignals.org)
+# search   = include my content in search indexes (incl. AI search)      -> yes
+# ai-input = use my content to generate AI answers / citations (RAG)      -> yes
+# ai-train = use my content to train or fine-tune AI models               -> no
+# (Change ai-train to "yes" if you're happy for your content to be used
+#  for model training. It does not affect AI-search citations either way.)
+User-agent: *
+Content-Signal: search=yes,ai-input=yes,ai-train=no
+Allow: /
+Disallow: /api/
+
+Sitemap: https://www.indiavisaexperts.com/sitemap.xml
