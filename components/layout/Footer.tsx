@@ -25,12 +25,14 @@ const footerBlog = [
 ];
 
 const footerResources = [
+  { label: "Visa Finder", href: "/india-visa-finder" },
+  { label: "FRRO Deadline Calculator", href: "/frro-registration-deadline-calculator" },
+  { label: "Compare Visa Types", href: "/india-visa-types" },
+  { label: "India Visa Statistics", href: "/india-immigration-statistics" },
+  { label: "FAQ", href: "/faq" },
   { label: "Blog", href: "/blog" },
   { label: "About Us", href: "/about" },
   { label: "Contact", href: "/contact" },
-  { label: "Privacy Policy", href: "/privacy-policy" },
-  { label: "Terms & Conditions", href: "/terms" },
-  { label: "Disclaimer", href: "/disclaimer" },
 ];
 
 const socialLinks = [
@@ -162,7 +164,7 @@ export default function Footer() {
 
           {/* Resources */}
           <div>
-            <h4 className="font-semibold text-white mb-4 text-sm uppercase tracking-wider">Resources</h4>
+            <h4 className="font-semibold text-white mb-4 text-sm uppercase tracking-wider">Tools & Resources</h4>
             <ul className="space-y-2.5">
               {footerResources.map((item) => (
                 <li key={item.href}>

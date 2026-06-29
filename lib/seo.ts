@@ -125,3 +125,33 @@ export function articleSchema(post: BlogPost) {
     inLanguage: "en-US",
   };
 }
+
+/** Ordered list of items (e.g. visa types). Paths resolve against BASE_URL. */
+export function itemListSchema(name: string, items: { name: string; path: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name,
+    itemListElement: items.map((item, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: item.name,
+      url: abs(item.path),
+    })),
+  };
+}
+
+/** Step-by-step HowTo (e.g. a calculator/process). */
+export function howToSchema(name: string, description: string, steps: string[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name,
+    description,
+    step: steps.map((text, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      text,
+    })),
+  };
+}

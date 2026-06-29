@@ -190,11 +190,15 @@ export default function ServicesOverview() {
 
         <AnimatedSection delay={0.15} className="mt-12 text-center">
           <p className="text-sm text-gray-500">
-            Not sure which service you need?{" "}
-            <Link href="/contact" className="text-navy-700 font-semibold hover:text-gold-600 transition-colors">
-              Book a free consultation
+            Not sure which service you need? Try our free{" "}
+            <Link href="/india-visa-finder" className="text-navy-700 font-semibold hover:text-gold-600 transition-colors">
+              Visa Finder
             </Link>{" "}
-            and our experts will guide you.
+            or{" "}
+            <Link href="/contact" className="text-navy-700 font-semibold hover:text-gold-600 transition-colors">
+              book a free consultation
+            </Link>
+            .
           </p>
         </AnimatedSection>
       </div>

@@ -224,6 +224,34 @@ export default function ServicePageTemplate({ service }: ServicePageTemplateProp
         </div>
       </section>
 
+      {/* Helpful free tools */}
+      <section className="py-16 bg-white border-t border-gray-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-display text-2xl font-bold text-navy-900 mb-6 text-center">
+            Free tools to plan your India visa
+          </h2>
+          <div className="grid sm:grid-cols-3 gap-4">
+            {[
+              { href: "/india-visa-finder", title: "Visa Finder", desc: "Find the right visa in seconds" },
+              { href: "/india-visa-types", title: "Compare Visa Types", desc: "All categories, side by side" },
+              { href: "/frro-registration-deadline-calculator", title: "FRRO Deadline Calculator", desc: "Your registration deadline" },
+            ].map((tool) => (
+              <Link
+                key={tool.href}
+                href={tool.href}
+                className="group block rounded-xl border border-gray-200 p-5 hover:border-gold-300 hover:shadow-soft transition-all"
+              >
+                <div className="flex items-center justify-between mb-1">
+                  <span className="font-semibold text-navy-900 group-hover:text-gold-600">{tool.title}</span>
+                  <ArrowRight className="w-4 h-4 text-gold-600 group-hover:translate-x-0.5 transition-transform" />
+                </div>
+                <p className="text-sm text-gray-500">{tool.desc}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Contact Form */}
       <section className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
