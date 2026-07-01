@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { contact } from "@/data/contact";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | India Visa Experts",
+  title: "Privacy Policy",
   description: "Privacy Policy of India Visa Experts — independent immigration consulting service.",
   alternates: { canonical: "/privacy-policy" },
 };

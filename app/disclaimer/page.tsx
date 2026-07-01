@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { contact } from "@/data/contact";
 
 export const metadata: Metadata = {
-  title: "Disclaimer | India Visa Experts",
+  title: "Disclaimer",
   description: "Important disclaimer — India Visa Experts is an independent consulting service, not affiliated with the Government of India.",
   alternates: { canonical: "/disclaimer" },
 };

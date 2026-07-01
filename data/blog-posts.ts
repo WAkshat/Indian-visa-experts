@@ -30,7 +30,7 @@ export const blogCategories = [
 export const blogPosts: BlogPost[] = [
   {
     slug: "complete-guide-indian-business-visa",
-    title: "Complete Guide to Indian Business Visa: Requirements, Process, and Tips for 2024",
+    title: "Complete Guide to Indian Business Visa: Requirements, Process, and Tips",
     excerpt:
       "Everything you need to know about applying for an Indian Business Visa — from eligibility and required documents to the step-by-step application process and expert tips.",
     category: "Business Visa",
@@ -40,7 +40,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2024-01-15",
     readTime: 10,
     featured: true,
-    metaTitle: "Complete Guide to Indian Business Visa 2024 | India Visa Experts",
+    metaTitle: "Indian Business Visa: Complete Guide",
     metaDescription:
       "Comprehensive guide to Indian Business Visa requirements, eligibility, documents needed, and the application process. Expert tips from India's trusted immigration consultants.",
     keywords: ["India Business Visa", "Business Visa India guide", "Indian visa requirements business"],
@@ -210,7 +210,7 @@ India Visa Experts is an independent consulting firm. We are not affiliated with
     publishedAt: "2024-01-22",
     readTime: 8,
     featured: true,
-    metaTitle: "Business Visa vs Employment Visa India — Key Differences Explained",
+    metaTitle: "Business Visa vs Employment Visa India",
     metaDescription:
       "Confused about Business vs Employment Visa for India? This expert guide explains the key differences, activities permitted, eligibility, and which visa you need for your situation.",
     keywords: ["Business Visa vs Employment Visa India", "India visa types comparison", "which visa for India"],
@@ -360,7 +360,7 @@ India Visa Experts is an independent private consulting firm. We are not affilia
     publishedAt: "2024-02-05",
     readTime: 12,
     featured: true,
-    metaTitle: "FRRO Registration India Guide 2024 | Foreign Nationals Compliance",
+    metaTitle: "FRRO Registration India: Complete Guide",
     metaDescription:
       "Complete guide to FRRO registration in India for foreign nationals. Learn who must register, deadlines, documents needed, the online process, and how to avoid penalties.",
     keywords: ["FRRO registration India", "foreigners registration office India", "residential permit India"],
@@ -537,7 +537,7 @@ India Visa Experts is an independent private consulting firm. We are not affilia
     publishedAt: "2024-02-19",
     readTime: 9,
     featured: false,
-    metaTitle: "X Visa India (Dependent Visa) Guide 2024 | Spouses & Dependents",
+    metaTitle: "X Visa India: Dependent Visa Guide",
     metaDescription:
       "Complete guide to X Visa India for spouses and dependents. Learn eligibility, required documents, application process, rights, and restrictions for X Visa holders.",
     keywords: ["X Visa India", "Dependent Visa India", "spouse visa India", "family visa India"],
@@ -693,7 +693,7 @@ India Visa Experts is an independent private consulting firm. We are not affilia
     publishedAt: "2024-03-04",
     readTime: 9,
     featured: true,
-    metaTitle: "Why Indian Visa Applications Are Rejected | Common Reasons & How to Avoid",
+    metaTitle: "Why India Visa Applications Get Rejected",
     metaDescription:
       "Discover the top 10 reasons Indian visa applications get rejected and learn practical strategies to avoid them. Expert advice from India's trusted immigration consultants.",
     keywords: ["India visa rejection reasons", "why India visa rejected", "Indian visa application tips"],
@@ -833,7 +833,7 @@ India Visa Experts is an independent private consulting firm. We are not affilia
     publishedAt: "2024-03-18",
     readTime: 7,
     featured: false,
-    metaTitle: "Documents Required for Indian Business Visa 2024 | Complete Checklist",
+    metaTitle: "Indian Business Visa: Documents Checklist",
     metaDescription:
       "Complete document checklist for Indian Business Visa application. Expert guidance on what documents are required, format requirements, and tips to strengthen your application.",
     keywords: ["documents required India Business Visa", "India business visa checklist", "Business Visa India documents"],
@@ -997,7 +997,7 @@ India Visa Experts is an independent private consulting firm. We are not affilia
     publishedAt: "2024-04-02",
     readTime: 10,
     featured: false,
-    metaTitle: "How to Extend Your Indian Visa 2024 | FRRO Extension Guide",
+    metaTitle: "How to Extend Your Indian Visa",
     metaDescription:
       "Step-by-step guide to extending your Indian visa through FRRO. Learn eligibility, documents needed, the online process, timeline, and expert tips for successful visa extension.",
     keywords: ["visa extension India", "extend Indian visa FRRO", "India visa extension process"],
@@ -1181,7 +1181,7 @@ India Visa Experts is an independent private consulting firm. We are not affilia
     publishedAt: "2024-04-16",
     readTime: 12,
     featured: true,
-    metaTitle: "How Foreign Companies Can Operate in India | Structures & Compliance Guide",
+    metaTitle: "How Foreign Companies Operate in India",
     metaDescription:
       "Complete guide for foreign companies entering the Indian market. Learn about business structures, foreign national employee visas, FRRO compliance, and ongoing immigration management.",
     keywords: ["foreign company India", "setting up business India", "foreign national employees India compliance"],
@@ -1345,7 +1345,7 @@ India Visa Experts is an independent private consulting firm. We are not affilia
     publishedAt: "2024-05-07",
     readTime: 8,
     featured: false,
-    metaTitle: "OCI Card vs X Visa India: Which is Right for You? | Complete Comparison",
+    metaTitle: "OCI Card vs X Visa India: Comparison",
     metaDescription:
       "OCI card vs X Visa for India — understand the key differences, benefits, restrictions, and eligibility to decide which option is best for your situation. Expert guidance.",
     keywords: ["OCI vs X Visa India", "OCI card vs dependent visa India", "Overseas Citizen of India vs Entry Visa"],
@@ -1500,7 +1500,7 @@ India Visa Experts is an independent private consulting firm. We are not affilia
     publishedAt: "2024-05-21",
     readTime: 11,
     featured: false,
-    metaTitle: "Foreign National Compliance Requirements India | Complete Guide 2024",
+    metaTitle: "Foreign National Compliance in India",
     metaDescription:
       "Complete guide to foreign national compliance requirements in India. Visa conditions, FRRO registration, address reporting, employer obligations, and how to avoid violations.",
     keywords: ["foreign national compliance India", "India immigration compliance", "FRRO compliance India"],

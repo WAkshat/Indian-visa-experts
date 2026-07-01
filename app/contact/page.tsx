@@ -5,7 +5,7 @@ import NewsletterForm from "@/components/forms/NewsletterForm";
 import { contact, whatsappLink } from "@/data/contact";
 
 export const metadata: Metadata = {
-  title: "Contact India Visa Experts | Book a Free Consultation",
+  title: "Contact Us | Book a Free Consultation",
   description:
     "Contact India Visa Experts for expert guidance on India visas, FRRO registration, and immigration compliance. Book a free initial consultation with our team.",
   alternates: { canonical: "/contact" },

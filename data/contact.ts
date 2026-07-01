@@ -7,7 +7,7 @@ export const contact = {
   phoneDisplay: "+91 98183 85663",
   phoneTel: "+919818385663", // used in tel: links
   whatsappNumber: "919818385663", // wa.me path (country code + number, no +)
-  email: "indiavisa.consult@gmail.com",
+  email: "indiavisaxperts@gmail.com",
   address: {
     full: "Urban Square by Pioneer Urban, Golf Course Extension Road, Gurgaon, Haryana 122102, India",
     street: "Urban Square by Pioneer Urban, Golf Course Extension Road",

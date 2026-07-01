@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions | India Visa Experts",
+  title: "Terms & Conditions",
   description: "Terms and Conditions for India Visa Experts immigration consulting services.",
   alternates: { canonical: "/terms" },
 };

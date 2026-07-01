@@ -5,7 +5,7 @@ import BlogExplorer from "@/components/blog/BlogExplorer";
 import NewsletterForm from "@/components/forms/NewsletterForm";
 
 export const metadata: Metadata = {
-  title: "India Immigration Blog | Visa Guides & Compliance Articles",
+  title: "Visa Guides & Compliance Blog",
   description:
     "Expert articles on India Business Visa, Employment Visa, FRRO Registration, compliance requirements, and immigration guides for foreign nationals.",
   alternates: { canonical: "/blog" },

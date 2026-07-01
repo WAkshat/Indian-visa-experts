@@ -5,7 +5,7 @@ import { Shield, Target, Eye, Award, Building2, Users, Globe } from "lucide-reac
 import CTASection from "@/components/sections/CTASection";
 
 export const metadata: Metadata = {
-  title: "About India Visa Experts | Independent Immigration Consulting",
+  title: "About Us | Independent Visa Consultants",
   description:
     "Learn about India Visa Experts — an independent immigration consulting firm providing expert guidance on India visas, FRRO compliance, and foreign national immigration services.",
   alternates: { canonical: "/about" },

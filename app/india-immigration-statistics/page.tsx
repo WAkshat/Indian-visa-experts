@@ -5,7 +5,7 @@ import JsonLd from "@/components/seo/JsonLd";
 import { breadcrumbSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "India Visa & Tourism Statistics (Official Data)",
+  title: "India Visa & Tourism Statistics",
   description:
     "Key India foreign-arrival and e-Visa figures from official sources (Ministry of Tourism, PIB, Bureau of Immigration), with links to the primary datasets. Real data, attributed.",
   alternates: { canonical: "/india-immigration-statistics" },

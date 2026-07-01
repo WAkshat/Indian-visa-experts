@@ -38,12 +38,17 @@ export function organizationSchema() {
     },
     areaServed: { "@type": "Country", name: "India" },
     sameAs: [contact.social.linkedin],
-    serviceType: [
+    // `serviceType` is only valid on the Service type, not on LocalBusiness/
+    // ProfessionalService — so express the services as nested Offers instead.
+    makesOffer: [
       "Business Visa Consulting",
       "Employment Visa Consulting",
       "FRRO Registration",
       "Immigration Advisory",
-    ],
+    ].map((name) => ({
+      "@type": "Offer",
+      itemOffered: { "@type": "Service", name, serviceType: name },
+    })),
   };
 }
 
